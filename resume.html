@@ -250,6 +250,152 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 <div class='section'>
 	<h2 id='skills'>Skills</h2>
 
+<style>
+div.timeline p {
+	background-color: #CCC;
+	text-align: right;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-right: 10px;
+}
+div.timeline div {
+	width: 680px;
+	margin: 0;
+	padding: 0;
+}
+div.timeline div p.tick {
+	width: 104px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	display: inline-block;
+}
+div.timeline h4 {
+	float: right;
+	margin-right: -50px;
+	margin-top: 0;
+	margin-left: 0;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+}
+.start-jan {
+}
+.start-feb {
+	border-left: 9px white solid;
+}
+.start-mar {
+	border-left: 18px white solid;
+}
+.start-apr {
+	border-left: 27px white solid;
+}
+.start-may {
+	border-left: 36px white solid;
+}
+.start-jun {
+	border-left: 45px white solid;
+}
+.start-jul {
+	border-left: 54px white solid;
+}
+.start-aug {
+	border-left: 63px white solid;
+}
+.start-sep {
+	border-left: 72px white solid;
+}
+.start-oct {
+	border-left: 81px white solid;
+}
+.start-nov {
+	border-left: 90px white solid;
+}
+.start-dec {
+	border-left: 99px white solid;
+}
+.start-y2007 {
+	margin-left: 0px;
+}
+.start-y2008 {
+	margin-left: 108px;
+}
+.start-y2009 {
+	margin-left: 216px;
+}
+.start-y2010 {
+	margin-left: 324px;
+}
+.start-y2011 {
+	margin-left: 432px;
+}
+.start-y2012 {
+	margin-left: 540px;
+}
+.end-y2007 {
+	margin-right: 540px;
+}
+.end-y2008 {
+	margin-right: 432px;
+}
+.end-y2009 {
+	margin-right: 324px;
+}
+.end-y2010 {
+	margin-right: 216px;
+}
+.end-y2011 {
+	margin-right: 108px;
+}
+.end-y2012 {
+	margin-right: 0;
+}
+.end-current {
+	margin-right: 0;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+}
+.time-hint {
+	border: #9fc3df 2px solid;
+	margin-top: -17px;
+	margin-bottom: 0;
+	padding: 0;
+	border-radius: 4px;
+}
+</style>
+	<div class='timeline'>
+		<div>
+		<p class='tick'>2007</p>
+		<p class='tick'>2008</p>
+		<p class='tick'>2009</p>
+		<p class='tick'>2010</p>
+		<p class='tick'>2011</p>
+		<p class='tick'>2012</p>
+		</div>
+		<h4>Languages</h4>
+		<p class='language python start-y2007 end-current'>Python</p>
+		<p class='language java start-y2007 start-jul end-current'>Java</p>
+		<p class='language javascript start-y2008 start-jul end-current'>Javascript</p>
+		<p class='language start-y2007 end-y2008'>C</p>
+		<p class='language linux start-y2007 end-current'>Bash</p>
+		<p class='start-y2010 end-current'>Others</p>
+		<h4>Frameworks</h4>
+		<p class='framework javascript start-y2011 start-jul end-current'>Google Closure</p>
+		<p class='framework python java start-y2010 start-jul end-current'>Google App Engine</p>
+		<p class='framework python start-y2008 end-y2008'>Django</p>
+		<p class='framework java start-y2010 start-jul end-current'>Others</p>
+		<h4>Databases</h4>
+		<p class='database sql start-y2007 end-current'>SQL</p>
+		<p class='database start-y2007 start-jul end-y2009'>MS SQL Server</p>
+		<p class='database start-y2008 end-y2010'>PostgreSQL</p>
+		<p class='database start-y2010 end-current '>MySQL</p>
+		<p class='database start-y2010 end-current nosql'>BigTable</p>
+		<p class='database start-y2010 start-jul end-current nosql'>Datastore</p>
+		<p class='database start-y2010 end-current nosql'>Others</p>
+		<h4>VCS</h4>
+		<p class='vcs start-y2012 end-current'>git</p>
+		<p class='vcs start-y2010 end-y2012'>Perforce</p>
+		<p class='vcs start-y2008 end-y2010'>SVN</p>
+	</div>
 	<ul>
 		<li>Programming languages: Python, Java, JavaScript</li>
 		<li>Frameworks/Libraries: Google App Engine, Google Closure,
@@ -262,8 +408,34 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 		<li>OS: Linux (Debian, Arch, Slackware), Windows 2000/XP/2003/7</li>
 	</ul>
 </div>
+<script>
+(function (){
+	var dimOthers = function(elements, class_list) {
+		var i;
+		var class_list;
+		for (i in elements) {
+			class_list = elements[i].classList;
+		}
+	};
+	var timeline = document.getElementsByClassName('timeline')[0];
+	var skills = timeline.getElementsByTagName('p');
+	var i;
+	for(i in skills) {
+		if (skills[i].className == 'tick') {
+			skills[i].onmouseover = function (e) {
+				dimOthers(skills[i].classList);
+			};
+			skills[i].onmouseout = function (e) {
+				undim(skills);
+			};
+		}
+	}
+})();
+</script>
 
 <div class='section'>
+	<div class='time-hint start-y2010 end-current'></div>
+
 	<h2 id='experience'>Experience</h2>
 
 	<h3 id='google' itemprop='jobTitle'>Sr. Software Engineer</h3>
@@ -283,6 +455,9 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 	<p>Tech lead of team of 6.</p>
 
 <div class='experience' id='lambda'>
+	<div class='time-hint start-y2010 end-y2010'></div>
+
+	<h2 id='experience'>Experience</h2>
 	<h3>Developer</h3>
 	<h4>Lambda Sistemas</h4>
 	<p class='period'>January 2010 &ndash; July 2010</p>
@@ -297,6 +472,8 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </div>
 
 <div class='experience' id='bejerman'>
+	<div class='time-hint start-y2008 end-y2009'></div>
+
 	<h3>Developer</h3>
 	<h4>Bejerman S.A.</h4>
 	<p class='period'>May 2008 &ndash; December 2009</p>
@@ -309,6 +486,7 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </div>
 
 <div class='experience' id='prominente'>
+	<div class='time-hint start-y2007 end-y2007'></div>
 	<h3>Technical Support</h3>
 	<h4>Prominente S.A.</h4>
 	<p class='period'>July 2007 &ndash; December 2007</p>
