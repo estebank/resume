@@ -97,6 +97,9 @@ h4 {
 	color: #666;
 	font-size: 10pt;
 }
+ul.skills {
+	display: none;
+}
 </style>
 <style type='text/css'
 	media='only screen and (max-width: 610px), only screen and (max-device-width: 610px), only screen and (-webkit-device-pixel-ratio:0.75)'>
@@ -135,6 +138,12 @@ address img{
 	font-size: 9pt;
 	float: none;
 	margin: 0;
+}
+.timeline {
+	display: none;
+}
+ul.skills {
+	display: block;
 }
 </style>
 <meta name="viewport" 
@@ -197,8 +206,14 @@ body {
 p {
 	page-break-inside: avoid;
 }
-h3, h4, p.period{
+h3, h4, p.period {
 	page-break-after: avoid;
+}
+.timeline {
+	display: none;
+}
+ul.skills {
+	display: block;
 }
 </style>
 <meta name='author' content='Esteban Kuber' />
@@ -238,25 +253,28 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </address>
 
 <div id='intro'>
-	<p>I thrive in challenging environments that require a proactive and
-		out of the box thinking.</p>
-
 	<p>I have a B1/B2 US Visa and dual Argentinean/Italian citizenship.
 		Fluent in both English and Spanish (native).
 		Received my Electronics Technician degree with honors,
-		currently studying to get a B.S. in Informatics Engineering.</p>
+		currently studying to get a B.Sc. in Informatics Engineering.</p>
 </div>
 
 <div class='section'>
 	<h2 id='skills'>Skills</h2>
 
 <style>
+div.timeline {
+	margin-bottom: 12px;
+}
 div.timeline p {
+	background-image: -webkit-linear-gradient(left, #FFFFFF 0, #CCC 60px);
 	background-color: #CCC;
 	text-align: right;
 	margin-top: 1px;
 	margin-bottom: 1px;
 	padding-right: 10px;
+	border-radius: 3px;
+	text-shadow: white 0 0 5px;
 }
 div.timeline div {
 	width: 680px;
@@ -264,19 +282,21 @@ div.timeline div {
 	padding: 0;
 }
 div.timeline div p.tick {
-	width: 104px;
+	width: 105px;
 	margin: 0;
 	padding: 0;
 	border: none;
 	display: inline-block;
+	background-image: none !important;
+	background-color: #EEE;
 }
 div.timeline h4 {
 	float: right;
-	margin-right: -50px;
-	margin-top: 0;
-	margin-left: 0;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
+	width: 0;
+	margin-right: -10px;
+	margin-top: -6px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
 }
 .start-jan {
 }
@@ -312,6 +332,115 @@ div.timeline h4 {
 }
 .start-dec {
 	border-left: 99px white solid;
+}
+.end-jan {
+	border-right: 99px white solid;
+}
+.end-feb {
+	border-right: 90px white solid;
+}
+.end-mar {
+	border-right: 81px white solid;
+}
+.end-apr {
+	border-right: 72px white solid;
+}
+.end-may {
+	border-right: 63px white solid;
+}
+.end-jun {
+	border-right: 54px white solid;
+}
+.end-jul {
+	border-right: 45px white solid;
+}
+.end-aug {
+	border-right: 36px white solid;
+}
+.end-sep {
+	border-right: 27px white solid;
+}
+.end-oct {
+	border-right: 18px white solid;
+}
+.end-nov {
+	border-right: 9px white solid;
+}
+.end-dec {
+}
+div.start-jan {
+}
+div.start-feb {
+	border-left: 9px transparent solid;
+}
+div.start-mar {
+	border-left: 18px transparent solid;
+}
+div.start-apr {
+	border-left: 27px transparent solid;
+}
+div.start-may {
+	border-left: 36px transparent solid;
+}
+div.start-jun {
+	border-left: 45px transparent solid;
+}
+div.start-jul {
+	border-left: 54px transparent solid;
+}
+div.start-aug {
+	border-left: 63px transparent solid;
+}
+div.start-sep {
+	border-left: 72px transparent solid;
+}
+div.start-oct {
+	border-left: 81px transparent solid;
+}
+div.start-nov {
+	border-left: 90px transparent solid;
+}
+div.start-dec {
+	border-left: 99px transparent solid;
+}
+div.end-jan {
+	border-right: 99px transparent solid;
+}
+div.end-feb {
+	border-right: 90px transparent solid;
+}
+div.end-mar {
+	border-right: 81px transparent solid;
+}
+div.end-apr {
+	border-right: 72px transparent solid;
+}
+div.end-may {
+	border-right: 63px transparent solid;
+}
+div.end-jun {
+	border-right: 54px transparent solid;
+}
+div.end-jul {
+	border-right: 45px transparent solid;
+}
+div.end-aug {
+	border-right: 36px transparent solid;
+}
+div.end-sep {
+	border-right: 27px transparent solid;
+}
+div.end-oct {
+	border-right: 18px transparent solid;
+}
+div.end-nov {
+	border-right: 9px transparent solid;
+}
+div.end-dec {
+}
+.start-earlier {
+	background-image: none !important;
+	background-color: #CCC;
 }
 .start-y2007 {
 	margin-left: 0px;
@@ -351,15 +480,60 @@ div.timeline h4 {
 }
 .end-current {
 	margin-right: 0;
-	border-bottom-right-radius: 30px;
-	border-top-right-radius: 30px;
+}
+p.end-current {
+	border-bottom-right-radius: 30px !important;
+	border-top-right-radius: 30px !important;
 }
 .time-hint {
-	border: #9fc3df 2px solid;
-	margin-top: -17px;
+	border-bottom: #9fc3df 2px solid;
+	margin-top: -16px;
 	margin-bottom: 0;
 	padding: 0;
 	border-radius: 4px;
+}
+div.timeline p.go-up {
+	margin-top: -18px;
+}
+p.language {
+	background-image: -webkit-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px) !important;
+}
+p.framework {
+	background-image: -webkit-linear-gradient(left, #FFFFFF 0, #80B584 60px) !important;
+}
+p.database {
+	background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FFCE73 60px) !important;
+}
+p.vcs {
+	background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px) !important;
+}
+p.language.go-up {
+        background-image: none !important;
+	background-color: #7BA7E1;
+}
+p.framework.go-up {
+        background-image: none !important;
+	background-color: #80B584;
+}
+p.database.go-up {
+        background-image: none !important;
+	background-color: #FFCE73;
+}
+p.vcs.go-up {
+        background-image: none !important;
+	background-color: #FF8E8E;
+}
+h4.language {
+	color: #000033;
+}
+h4.framework {
+	color: #003300;
+}
+h4.database {
+	color: #996600;
+}
+h4.vcs {
+	color: #330000;
 }
 </style>
 	<div class='timeline'>
@@ -371,39 +545,57 @@ div.timeline h4 {
 		<p class='tick'>2011</p>
 		<p class='tick'>2012</p>
 		</div>
-		<h4>Languages</h4>
+
+		<h4 class='language'>Languages</h4>
 		<p class='language python start-y2007 end-current'>Python</p>
-		<p class='language java start-y2007 start-jul end-current'>Java</p>
+		<p class='language java start-y2007 start-jul end-y2008'>Java</p>
+		<p class='language java start-y2010 start-jul end-current go-up'>Java</p>
 		<p class='language javascript start-y2008 start-jul end-current'>Javascript</p>
-		<p class='language start-y2007 end-y2008'>C</p>
-		<p class='language linux start-y2007 end-current'>Bash</p>
-		<p class='start-y2010 end-current'>Others</p>
-		<h4>Frameworks</h4>
+		<p class='language start-earlier end-y2008 end-jun'>C</p>
+		<p class='language linux start-earlier end-current'>Bash</p>
+		<p class='language linux start-y2010 start-jul end-current'>Others</p>
+
+		<h4 class='framework'>Frameworks</h4>
 		<p class='framework javascript start-y2011 start-jul end-current'>Google Closure</p>
-		<p class='framework python java start-y2010 start-jul end-current'>Google App Engine</p>
+		<p class='framework python java start-y2010 start-jul end-current gae'>Google App Engine</p>
 		<p class='framework python start-y2008 end-y2008'>Django</p>
 		<p class='framework java start-y2010 start-jul end-current'>Others</p>
-		<h4>Databases</h4>
-		<p class='database sql start-y2007 end-current'>SQL</p>
-		<p class='database start-y2007 start-jul end-y2009'>MS SQL Server</p>
-		<p class='database start-y2008 end-y2010'>PostgreSQL</p>
-		<p class='database start-y2010 end-current '>MySQL</p>
-		<p class='database start-y2010 end-current nosql'>BigTable</p>
-		<p class='database start-y2010 start-jul end-current nosql'>Datastore</p>
-		<p class='database start-y2010 end-current nosql'>Others</p>
-		<h4>VCS</h4>
-		<p class='vcs start-y2012 end-current'>git</p>
-		<p class='vcs start-y2010 end-y2012'>Perforce</p>
-		<p class='vcs start-y2008 end-y2010'>SVN</p>
+
+		<h4 class='database'>Databases</h4>
+		<p class='database start-y2007 start-jul end-current sql'>SQL</p>
+		<p class='database start-y2007 start-jul end-y2009 sql'>MS SQL Server</p>
+		<p class='database start-y2008 end-y2010 sql'>PostgreSQL</p>
+		<p class='database start-y2010 start-jul end-current sql'>MySQL</p>
+		<p class='database start-y2010 start-jul end-current nosql'>BigTable</p>
+		<p class='database start-y2010 start-jul end-current nosql gae'>Google App Engine Datastore</p>
+		<p class='database start-y2010 start-jul end-current nosql'>Others</p>
+
+		<h4 class='vcs'>VCS</h4>
+		<p class='vcs git start-y2012 end-current'><kbd>git</kbd></p>
+		<p class='vcs perforce start-y2010 end-y2012'>Perforce</p>
+		<p class='vcs svn start-y2008 end-y2010'>SVN</p>
+
+		<h4 class='os'>OS</h4>
+		<p class='os linux start-earlier end-current'>Linux (Arch/Debian/Slackware)</p>
+		<p class='os start-earlier end-y2010'>Windows (2000/XP/7)</p>
+
+		<div>
+		<p class='tick'>2007</p>
+		<p class='tick'>2008</p>
+		<p class='tick'>2009</p>
+		<p class='tick'>2010</p>
+		<p class='tick'>2011</p>
+		<p class='tick'>2012</p>
+		</div>
 	</div>
-	<ul>
+	<ul class='skills'>
 		<li>Programming languages: Python, Java, JavaScript</li>
 		<li>Frameworks/Libraries: Google App Engine, Google Closure,
 			Google Visualization API, JQuery,
 			Protocol Buffer, Django, others</li>
 		<li>SCMS: Perforce, git, SVN</li>
 		<li>RDBMS: PostgreSQL, MySQL, MS SQL Server</li>
-		<li>NoSQL Databases: BigTable, others</li>
+		<li>NoSQL Databases: BigTable, Google App Engine Datastore, others</li>
 		<li>Proficient with HTML+CSS, HTML5 knowledge</li>
 		<li>OS: Linux (Debian, Arch, Slackware), Windows 2000/XP/2003/7</li>
 	</ul>
@@ -434,12 +626,13 @@ div.timeline h4 {
 </script>
 
 <div class='section'>
-	<div class='time-hint start-y2010 end-current'></div>
+	<div class='start-jul'><div class='time-hint start-y2010 end-current'></div></div>
 
 	<h2 id='experience'>Experience</h2>
 
 	<h3 id='google' itemprop='jobTitle'>Sr. Software Engineer</h3>
-	<h4>Sistemas Globales S.A. &mdash; Google (Vendor)</h4>
+	<h4 class='python java javascript bash linux git perforce sql nosql'
+		>Sistemas Globales S.A. &mdash; Google (Vendor)</h4>
 	<p class='period'>July 2010 &ndash; Current</p>
 
 	<p>Developed ETL pipelines in Java for large datasets using distributed
@@ -455,11 +648,11 @@ div.timeline h4 {
 	<p>Tech lead of team of 6.</p>
 
 <div class='experience' id='lambda'>
-	<div class='time-hint start-y2010 end-y2010'></div>
+	<div class='end-jun'><div class='time-hint start-y2010 end-y2010'></div></div>
 
-	<h2 id='experience'>Experience</h2>
 	<h3>Developer</h3>
-	<h4>Lambda Sistemas</h4>
+	<h4 class='python javascript bash linux svn sql'
+		>Lambda Sistemas</h4>
 	<p class='period'>January 2010 &ndash; July 2010</p>
 
 	<p>Maintained and expanded a homegrown ERP, CMS, CRM and HRM multiplatform
@@ -472,10 +665,10 @@ div.timeline h4 {
 </div>
 
 <div class='experience' id='bejerman'>
-	<div class='time-hint start-y2008 end-y2009'></div>
+	<div class='start-may'><div class='time-hint start-y2008 end-y2009'></div></div>
 
 	<h3>Developer</h3>
-	<h4>Bejerman S.A.</h4>
+	<h4 class='python javascript svn sql'>Bejerman S.A.</h4>
 	<p class='period'>May 2008 &ndash; December 2009</p>
 
 	<p>Maintained legacy internal systems ranging from applications for Customer
@@ -486,7 +679,7 @@ div.timeline h4 {
 </div>
 
 <div class='experience' id='prominente'>
-	<div class='time-hint start-y2007 end-y2007'></div>
+	<div class='start-jul'><div class='time-hint start-y2007 end-y2007'></div></div>
 	<h3>Technical Support</h3>
 	<h4>Prominente S.A.</h4>
 	<p class='period'>July 2007 &ndash; December 2007</p>
@@ -496,6 +689,7 @@ div.timeline h4 {
 </div>
 
 <div class='experience' id='edvsa'>
+	<div class='end-mar'><div class='time-hint start-earlier end-y2007'></div></div>
 	<h3>Connectionist</h3>
 	<h4>EDVSA</h4>
 	<p class='period'>(Summer job) December 2006 &ndash; March 2007</p>
@@ -522,17 +716,22 @@ div.timeline h4 {
 		title='voyager' rel='me'>Stack Overflow</a></h3>
 	<p>Written 350 answers. Active in javascript, python, html, css, jquery.</p>
 
-	<h3><a href='https://github.com/estebank/jsmk'>jsmk</a></h3>
+	<h3 class='javascript'><a href='https://github.com/estebank/jsmk'>jsmk</a></h3>
 	<p>Javascript, Canvas based, fighting game engine. Co-author.
 		Currently in early stages of development.</p>
 
-		<h3><a href='https://github.com/estebank/panorama'>panorama</a></h3>
-		<p>HTML5+JS diff display that mimics
-			<a href='http://meldmerge.org/'>meld's</a> interface.
-			Early stages of development.</p>
+	<h3 class='javascript'><a href='https://github.com/estebank/panorama'>panorama</a></h3>
+	<p>HTML5+JS diff display that mimics
+		<a href='http://meldmerge.org/'>meld's</a> interface.
+		Early stages of development.</p>
 
-	<h3><a href='http://code.google.com/p/google-visualization-python/'>Google visualization Python API</a></h3>
+	<h3 class='python'><a href='http://code.google.com/p/google-visualization-python/'>Google visualization Python API</a></h3>
 	<p>Involvement: Simple bugfix in import.</p>
+
+	<h3 class='python'><a href='https://github.com/estebank/text-sherlock'>Text Sherlock</a></h3>
+	<p>Code clean up and extention.</p>
+
+	<h3><a href='https://plus.google.com/105658180396282744760/photos/p/pub'>Photography</a></h3>
 </div>
 </div>
 </body>
