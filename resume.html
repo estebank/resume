@@ -110,7 +110,7 @@ ul.skills {
 }
 div.timeline {
   margin-bottom: 12px;
-  width: 650px;
+  width: 100%;
   float: right;
 }
 div.timeline p {
@@ -120,20 +120,20 @@ div.timeline p {
   margin-top: 1px;
   margin-bottom: 1px;
   padding-right: 10px;
-  border-radius: 3px;
   text-shadow: white 0 0 5px;
   font-size: 12px;
   height: 14px;
 }
 div.timeline div {
-  width: 680px;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 div.timeline div p.tick {
-  width: 101px;
-  margin: 0;
-  padding: 0 0 0 3px;
+  width: 16%;
+  margin: 0 -1px 0 0;
+  padding: 0;
   display: inline-block;
   background-image: none !important;
   background-color: white;
@@ -146,7 +146,7 @@ div.timeline div p.tick {
 div.timeline h4 {
   float: right;
   width: 0;
-  margin-right: -10px;
+  margin-right: 2%;
   margin-top: -6px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -223,130 +223,51 @@ div.timeline h4 {
 }
 .end-dec {
 }
-div.start-jan {
-}
-div.start-feb {
-  border-left: 9px transparent solid;
-}
-div.start-mar {
-  border-left: 18px transparent solid;
-}
-div.start-apr {
-  border-left: 27px transparent solid;
-}
-div.start-may {
-  border-left: 36px transparent solid;
-}
-div.start-jun {
-  border-left: 45px transparent solid;
-}
-div.start-jul {
-  border-left: 54px transparent solid;
-}
-div.start-aug {
-  border-left: 63px transparent solid;
-}
-div.start-sep {
-  border-left: 72px transparent solid;
-}
-div.start-oct {
-  border-left: 81px transparent solid;
-}
-div.start-nov {
-  border-left: 90px transparent solid;
-}
-div.start-dec {
-  border-left: 99px transparent solid;
-}
-div.end-jan {
-  border-right: 99px transparent solid;
-}
-div.end-feb {
-  border-right: 90px transparent solid;
-}
-div.end-mar {
-  border-right: 81px transparent solid;
-}
-div.end-apr {
-  border-right: 72px transparent solid;
-}
-div.end-may {
-  border-right: 63px transparent solid;
-}
-div.end-jun {
-  border-right: 54px transparent solid;
-}
-div.end-jul {
-  border-right: 45px transparent solid;
-}
-div.end-aug {
-  border-right: 36px transparent solid;
-}
-div.end-sep {
-  border-right: 27px transparent solid;
-}
-div.end-oct {
-  border-right: 18px transparent solid;
-}
-div.end-nov {
-  border-right: 9px transparent solid;
-}
-div.end-dec {
-}
 .start-earlier {
-  background-image: none !important;
-  background-color: #CCC;
+  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #CCC 10px) !important;
 }
 .start-y2007 {
-  margin-left: 0px;
+  margin-left: 0;
 }
 .start-y2008 {
-  margin-left: 108px;
+  margin-left: 16%;
 }
 .start-y2009 {
-  margin-left: 216px;
+  margin-left: 32%;
 }
 .start-y2010 {
-  margin-left: 324px;
+  margin-left: 48%;
 }
 .start-y2011 {
-  margin-left: 432px;
+  margin-left: 64%;
 }
 .start-y2012 {
-  margin-left: 540px;
+  margin-left: 80%;
 }
 .end-y2007 {
-  margin-right: 540px;
+  margin-right: 84%;
 }
 .end-y2008 {
-  margin-right: 432px;
+  margin-right: 68%;
 }
 .end-y2009 {
-  margin-right: 324px;
+  margin-right: 52%;
 }
 .end-y2010 {
-  margin-right: 216px;
+  margin-right: 36%;
 }
 .end-y2011 {
-  margin-right: 108px;
+  margin-right: 20%;
 }
 .end-y2012 {
-  margin-right: 0;
+  margin-right: 4%;
 }
 .end-current {
-  margin-right: 0;
+  margin-right: 4%;
 }
 p.end-current {
-  border-bottom-right-radius: 30px !important;
-  border-top-right-radius: 30px !important;
-}
-.time-hint {
-  border-bottom: #9fc3df 2px solid;
-  margin-top: -16px;
-  margin-bottom: 0;
-  padding: 0;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px 1px #DDD;
+/*  border-bottom-right-radius: 30px !important;
+  border-top-right-radius: 30px !important;*/
 }
 div.timeline p.go-up {
   margin-top: -15px;
@@ -364,20 +285,16 @@ p.vcs {
   background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px) !important;
 }
 p.language.go-up, p.language.start-earlier {
-        background-image: none !important;
-  background-color: #7BA7E1;
+  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px) !important;
 }
 p.framework.go-up, p.framework.start-earlier {
-        background-image: none !important;
-  background-color: #80B584;
+  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #80B584 10px) !important;
 }
 p.database.go-up, p.database.start-earlier {
-        background-image: none !important;
-  background-color: #FFCE73;
+  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FFCE73 10px) !important;
 }
 p.vcs.go-up, p.vcs.start-earlier {
-        background-image: none !important;
-  background-color: #FF8E8E;
+  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px) !important;
 }
 h4.language {
   color: #000033;
@@ -436,9 +353,6 @@ address img{
 }
 ul.skills {
   display: block;
-}
-.time-hint {
-  display: none;
 }
 </style>
 <meta name="viewport"
@@ -510,9 +424,6 @@ h3, h4, p.period {
 ul.skills {
   display: block;
 }
-.time-hint {
-  display: none;
-}
 .period {
   text-shadow: none;
 }
@@ -564,14 +475,7 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
   <h2 id='skills'>Skills</h2>
 
   <div class='timeline'>
-    <div>
-    <p class='tick'>2007</p>
-    <p class='tick'>2008</p>
-    <p class='tick'>2009</p>
-    <p class='tick'>2010</p>
-    <p class='tick'>2011</p>
-    <p class='tick'>2012</p>
-    </div>
+    <div><p class='tick'>2007</p><p class='tick'>2008</p><p class='tick'>2009</p><p class='tick'>2010</p><p class='tick'>2011</p><p class='tick'>2012</p></div>
 
     <h4 class='language'>Languages</h4>
     <p class='language python start-y2007 end-current'>Python</p>
@@ -579,7 +483,7 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
     <p class='language java start-y2010 start-jul end-current go-up'>Java</p>
     <p class='language javascript start-y2008 start-jul end-current'>Javascript</p>
     <!--p class='language start-y2008 start-jul end-y2009'>ASP.Net</p-->
-    <p class='language start-earlier end-y2008 end-jun'>C</p>
+    <p class='language c-lang start-earlier end-y2008 end-jun'>C</p>
     <p class='language linux start-earlier end-current'>Bash</p>
     <!--p class='language linux start-y2010 start-jul end-current'>Others</p-->
 
@@ -587,21 +491,22 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
     <p class='framework python java start-y2010 start-jul end-current gae'>Google App Engine</p>
     <p class='framework python start-y2008 end-y2008'>Django</p>
     <p class='framework python start-y2012 start-jun end-current go-up'>Django</p>
-    <p class='framework javascript start-y2011 start-jul end-current'>Google Closure</p>
     <p class='framework javascript start-y2009 end-y2011'>JQuery</p>
+    <p class='framework javascript start-y2011 start-jul end-current'>Google Closure</p>
     <p class='framework javascript start-y2010 start-jul end-current'>Google Visualization API</p>
-    <p class='framework start-y2010 start-jul end-current'>Protocol Buffers</p>
+    <p class='framework java start-y2010 start-jul end-current'>Protocol Buffers</p>
     <p class='framework java start-y2010 start-jul end-current'>Google Flume</p>
     <p class='framework java start-y2010 start-jul end-current'>Google Cloud Technology</p>
 
     <h4 class='database'>Storage</h4>
-    <p class='database start-y2007 start-jul end-current sql'>SQL</p>
-    <p class='database start-y2010 start-jul end-current sql'>MySQL</p>
-    <p class='database start-y2008 end-y2010 sql'>PostgreSQL</p>
-    <p class='database start-y2007 start-jul end-y2009 sql'>MS SQL Server</p>
-    <p class='database start-y2010 start-jul end-current nosql'>BigTable</p>
-    <p class='database start-y2010 start-jul end-current nosql gae'>Google App Engine Datastore</p>
-    <p class='database start-y2010 start-jul end-current nosql'>Protocol Buffers based RO Storage</p>
+    <p class='database sql start-y2007 start-jul end-current'>SQL</p>
+    <p class='database sql start-y2007 start-jul end-y2009'>MS SQL Server</p>
+    <p class='database sql start-y2008 end-y2010 end-jun'>PostgreSQL</p>
+    <p class='database sql start-y2010 start-jul end-current'>MySQL</p>
+    <p class='database nosql start-y2010 start-jul end-current'>BigTable</p>
+    <p class='database nosql start-y2010 start-jul end-current gae'>Google App Engine Datastore</p>
+    <p class='database sql start-y2011 start-jul end-current gae'>Google Cloud SQL</p>
+    <p class='database nosql start-y2010 start-jul end-current'>Protocol Buffers based RO Storage</p>
 
     <h4 class='vcs'>VCS</h4>
     <p class='vcs git start-y2011 start-mar end-current'><kbd>git</kbd></p>
@@ -609,17 +514,11 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
     <p class='vcs svn start-y2008 end-y2010'>SVN</p>
 
     <h4 class='os'>OS</h4>
-    <p class='os linux start-earlier end-current'>Linux (Arch/Debian/Slackware)</p>
-    <p class='os start-earlier end-y2010'>Windows (2000/XP/7)</p>
+    <p class='os linux start-earlier end-current'>Linux (Arch/Debian/Slackware/Ubuntu)</p>
+    <p class='os windows start-earlier end-y2010'>Windows (2000/XP/7)</p>
 
-    <div>
-    <p class='tick'>2007</p>
-    <p class='tick'>2008</p>
-    <p class='tick'>2009</p>
-    <p class='tick'>2010</p>
-    <p class='tick'>2011</p>
-    <p class='tick'>2012</p>
-    </div>
+    <div><p class='tick'>2007</p><p class='tick'>2008</p><p class='tick'>2009</p><p class='tick'>2010</p><p class='tick'>2011</p><p class='tick'>2012</p></div>
+
   </div><div style='clear: both;'></div>
   <ul class='skills'>
     <li>Programming languages: Python, Java, JavaScript</li>
@@ -635,12 +534,10 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </div>
 
 <div class='section'>
-  <div class='start-jul'><div class='time-hint start-y2010 end-current'></div></div>
-
   <h2 id='experience'>Experience</h2>
 
   <h3 id='google' itemprop='jobTitle'>Sr. Software Engineer</h3>
-  <h4 class='python java javascript bash linux git perforce sql nosql'
+  <h4 class='python java javascript linux git perforce sql nosql'
     >Google Vendor &mdash; Sistemas Globales S.A.</h4>
   <p class='period'>July 2010 &ndash; Current</p>
 
@@ -657,8 +554,6 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
   <p>Tech lead of team of 6.</p>
 
 <div class='experience' id='lambda'>
-  <div class='end-jun'><div class='time-hint start-y2010 end-y2010'></div></div>
-
   <h3>Developer</h3>
   <h4 class='python javascript bash linux svn sql'
     >Lambda Sistemas</h4>
@@ -674,10 +569,8 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </div>
 
 <div class='experience' id='bejerman'>
-  <div class='start-may'><div class='time-hint start-y2008 end-y2009'></div></div>
-
   <h3>Developer</h3>
-  <h4 class='python javascript svn sql'>Bejerman S.A.</h4>
+  <h4 class='python javascript svn sql windows'>Bejerman S.A.</h4>
   <p class='period'>May 2008 &ndash; December 2009</p>
 
   <p>Maintained legacy internal systems ranging from applications for Customer
@@ -688,7 +581,6 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </div>
 
 <div class='experience' id='prominente'>
-  <div class='start-jul'><div class='time-hint start-y2007 end-y2007'></div></div>
   <h3>Technical Support</h3>
   <h4>Prominente S.A.</h4>
   <p class='period'>July 2007 &ndash; December 2007</p>
@@ -698,7 +590,6 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </div>
 
 <div class='experience' id='edvsa'>
-  <div class='end-mar'><div class='time-hint start-earlier end-y2007'></div></div>
   <h3>Connectionist</h3>
   <h4>EDVSA</h4>
   <p class='period'>(Summer job) December 2006 &ndash; March 2007</p>
@@ -713,7 +604,8 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
   <h2 id='education'>Education</h2>
 
   <h3 id='uade'>B.S. Informatics Engineering</h3>
-  <h4 itemprop='alumniOf'>Universidad Argentina de la Empresa</h4>
+  <h4 class='java c-lang linux windows sql'
+      itemprop='alumniOf'>Universidad Argentina de la Empresa</h4>
   <p class='period'>2006 &ndash; Current</p>
   <p>Estimated graduation date: December 2012.</p>
 </div>
@@ -743,5 +635,50 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
   <h3><a href='https://plus.google.com/105658180396282744760/photos/p/pub'>Photography</a></h3>
 </div>
 </div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script>
+(function (){
+  var TIME = 250;
+  var DIM_OPACITY = .5;
+  
+  var toggled = false;
+  
+  var highlight = function(class_name) {
+    $('.timeline p').not('.tick').not(class_name).fadeTo(TIME, DIM_OPACITY);
+    var job_titles_to_dim = $('.section h4').parent().not('.timeline')
+        .children().filter('h4').not(class_name);
+    job_titles_to_dim.fadeTo(TIME, DIM_OPACITY);
+    job_titles_to_dim.siblings().not('h2').not('div').fadeTo(TIME, DIM_OPACITY);
+  };
+  
+  var unhighlight = function() {
+    if (!toggled) {
+      $('.timeline p').not('.tick').stop(true).fadeTo(TIME, 1);
+      var job_titles_to_dim = $('.section h4').parent().not('.timeline')
+          .children().filter('h4');
+      job_titles_to_dim.stop(true).fadeTo(TIME, 1);
+      job_titles_to_dim.siblings().stop(true).fadeTo(TIME, 1);
+    }
+  };
+  
+  // Highlight related skills and relevant employers on hover.
+  $('.timeline p').not('.tick').hover(function() {
+    if (!toggled) {
+      highlight('.' + this.className.split(' ')[1]);
+    }
+  }, unhighlight);
+  
+  // Highlight toggle that is nice to hover highlight.
+  $('.timeline p').not('.tick').click(function() {
+    if (toggled) {
+      toggled = false;
+      unhighlight();
+    } else {
+      toggled = true;
+      highlight('.' + this.className.split(' ')[1]);
+    }
+  });
+})();
+</script>
 </body>
 </html>
