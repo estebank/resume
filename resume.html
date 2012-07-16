@@ -5,8 +5,11 @@
 <style type='text/css' media='all'>
 body {
   background-color: #F1F1F1;
-  background-position: center;
-  background: -webkit-radial-gradient(circle, #F1F1F1, #AAA);
+  background: -webkit-radial-gradient(top center, circle, #F1F1F1, #AAA);
+  background: -moz-radial-gradient(top center, circle, #F1F1F1, #AAA);
+  background: -ms-radial-gradient(top center, circle, #F1F1F1, #AAA);
+  background: -o-radial-gradient(top center, circle, #F1F1F1, #AAA);
+  background: radial-gradient(circle at top, #F1F1F1, #AAA);
 }
 .content {
   max-width: 800px;
@@ -15,6 +18,7 @@ body {
   background-color: white;
   padding: 20px;
   overflow-x: hidden;
+  box-shadow: 0 3px 13px 3px #666;
 }
 h1 {
   float: left;
@@ -43,7 +47,6 @@ address p {
   margin: 1px;
   text-align: right;
 }
-
 address img {
   float: right;
   margin: -20px -8px 0 15px;
@@ -57,7 +60,6 @@ img.photo {
 img.qr-code {
   display: none;
 }
-
 #intro {
   clear: both;
 }
