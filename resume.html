@@ -369,9 +369,12 @@ h4.vcs {
   color: #777;
   text-decoration: none;
 }
+.footer a:hover {
+  text-decoration: underline;
+}
 .footer p {
-  text-shadow: #CCC 0 1px 0, #444 0 -1px 0;
-  font-size: 13px;
+  text-shadow: #DDD 0 1px 1px, #111 0 -1px 1px;
+  font-size: 12px;
   float: left;
   margin-right: 20px;
 }
@@ -380,6 +383,15 @@ h4.vcs {
   font-family: monospace;
   float: right;
   margin: 24px 0 6px 0;
+}
+::selection {
+  background: #9fc3df;
+  color: black;
+}
+.footer ::selection {
+  background: black;
+  color: white;
+  text-shadow: none;
 }
 </style>
 <style type='text/css'
