@@ -117,9 +117,6 @@ h4 {
   color: #666;
   font-size: 10pt;
 }
-#interests img {
-  display: none;
-}
 ul.skills {
   display: none;
 }
@@ -471,16 +468,6 @@ p {
   font-size: 9pt;
   color: #666;
 }
-#interests p {
-  margin-bottom: 40px;
-}
-#interests img {
-  display: block;
-  float: right;
-  margin-top: -22px;
-  width: 50px;
-  height: 50px;
-}
 @page {
   size: auto;
   margin: 10mm 10mm 15mm 15mm;
@@ -534,7 +521,7 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
   </h1>
 <address>
   <img alt='Esteban Kuber' itemprop='image' class='photo'
-    src='data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QCYRXhpZgAASUkqAAgAAAACADEBAgAHAAAAJgAAAGmHBAAB
+    src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QCYRXhpZgAASUkqAAgAAAACADEBAgAHAAAAJgAAAGmHBAAB
 AAAALgAAAAAAAABQaWNhc2EAAAQAAJAHAAQAAAAwMjIwhpIHACwAAABkAAAAAqAEAAEAAABiAAAA
 A6AEAAEAAABiAAAAAAAAAEFTQ0lJAAAAICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
 ICAg/9sAhAADAgIKCAsKDQsKCAgNCAsNCwoKCwoICgoKCg0OCggKCwgICAoKCAgICAgICAgKCgoI
@@ -615,8 +602,6 @@ sXx8F7ZrCRE4j+ZSf4lvybOTaPEmzZraZ1rU1UgtmJZxTtH6M0MEcUTO7aBfkAPovF9ZI58rt5J9
 zauFK/iK+/yw0PzJE8BHf2e1f3eYNhaCw2DpQSw2ckk9THh/2qAHaD//ACz6L2H7OE/0Lfd31K2m
 Lz5Pj9I5hi6Uob5PMYYPCWQ74mpp8YPF0Wj+ShYpOnc/tFhinSKIreDJWThepOsE6JNB/iLNPimp
 oBvHY9hD8Z9AuY7VP4VlpXvDsfpHXD8S509VwmamNDysjhf/2Q==' />
-  <img alt="Esteban Kuber's QR Code hCard" class='qr-code'
-    src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABiAQAAAACD3jujAAABVklEQVQ4jb3US4rAMAgGYMFtwKsE3Aa8upCtkKsIbgMZp/OgHbueQKEfFIy/SeHcF/yDAAf7tNZBiiQkNlPnU9WZDx/VwDfRIG74rgXS6fCLJJjD/bfeXYB8rZ993nWOs8Cgn/7uIjTf3mOoFOkA3TLkxKkKE2gbrFWRDGtMANfOnrLoiMb7q6OnViPXkHxOkWcKRqS0quZaJM0XhhQJK7GTyzhFKDLNvDWp0i696TCzKhrQZav6lKKDOFkC+pXEU0MWdMMtVsWu2U4or6rR9lzg+WlVjxlmkvlKUQaB4rvHVf0p0DWW+RKtCuv5MkdcHT01PRCjUVzVnxqDotNC1KrwdfIU7GlVOas8eP17Yk+htp0Rb7h2/VTGe6gtlBcBrpljI6Yqic9mscv3rbqrc46FNEf2pgUW2Oy6OX/lORP2TL8oK/iBbV/pPgWYW8vLY1H1v/+6DxwLIsCj73XEAAAAAElFTkSuQmCC' />
   <p><a href='mailto:resume@kuber.com.ar'
     itemprop='email'>resume@kuber.com.ar</a></p>
   <p>Buenos Aires, <span itemprop='nationality'>Argentina</span></p>
@@ -850,7 +835,6 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-26016890-1']);
 _gaq.push(['_setDomainName', 'kuber.com.ar']);
 _gaq.push(['_trackPageview']);
-
 (function() {
   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -859,17 +843,24 @@ _gaq.push(['_trackPageview']);
 </script>
 <script src='http://d-project.googlecode.com/svn/trunk/misc/qrcode/js/qrcode.js'></script>
 <script>
-$('#interests h3 a').each(function(index, element) {
-  var qr = qrcode(4, 'M');
-  qr.addData(this.href);
+(function () {
+  // When printing replace my mug for a QR code card.
+  var name = 'Esteban Kuber';
+  var tel = '+5491133786367';
+  var url = 'esteban.kuber.com.ar/resume';
+  var mail = '\x65\x73\x74\x65\x62\x61\x6e\x40kuber\x2e\x63\x6f\x6d\x2ear';
+  var mecard = 'MECARD:N:{name};TEL:{tel};URL:{url};EMAIL:{mail};;'
+      .replace('{name}', name)
+      .replace('{tel}', tel)
+      .replace('{url}',url)
+      .replace('{mail}', mail);
+
+  var qr = qrcode(6, 'M');
+  qr.addData(mecard);
   qr.make();
-  var qr_code_image = $(qr.createImgTag());
-  $(qr_code_image).css('float', 'right');
-  $(qr_code_image).css('margin-top', '-22px');
-  $(qr_code_image).css('width', '50px');
-  $(qr_code_image).css('height', '50px');
-  $(this).parent().after(qr_code_image);
-});
+  var qr_code_card = $(qr.createImgTag()).addClass('qr-code');
+  $('.photo').after(qr_code_card);
+})();
 </script>
 </body>
 </html>
