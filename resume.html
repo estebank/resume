@@ -765,9 +765,9 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 (function (){
   var TIME = 250;
   var DIM_OPACITY = .5;
-  
+
   var toggled = false;
-  
+
   var highlight = function(class_name) {
     $('.timeline p').not('.tick').not(class_name).fadeTo(TIME, DIM_OPACITY);
     var job_titles_to_dim = $('.section h4').parent().not('.timeline')
@@ -775,7 +775,7 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
     job_titles_to_dim.fadeTo(TIME, DIM_OPACITY);
     job_titles_to_dim.siblings().not('h2').not('div').fadeTo(TIME, DIM_OPACITY);
   };
-  
+
   var unhighlight = function() {
     if (!toggled) {
       $('.timeline p').not('.tick').stop(true).fadeTo(TIME, 1);
@@ -785,14 +785,14 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
       job_titles_to_dim.siblings().stop(true).fadeTo(TIME, 1);
     }
   };
-  
+
   // Highlight related skills and relevant employers on hover.
   $('.timeline p').not('.tick').hover(function() {
     if (!toggled) {
       highlight('.' + this.className.split(' ')[1]);
     }
   }, unhighlight);
-  
+
   // Highlight toggle that is nice to hover highlight.
   $('.timeline p').not('.tick').click(function() {
     if (toggled) {
