@@ -110,6 +110,14 @@ h4 {
   font-size: 9.5pt;
   margin: 0;
 }
+h4 a {
+  color: #333;
+  text-decoration: none;
+}
+h4 a:hover {
+  color: #00355b;
+  text-decoration: underline;
+}
 .period {
   font-style: italic;
   margin: -30px 0 0 0;
@@ -503,12 +511,12 @@ p {
 .experience {
   border-top-color: #AAA;
 }
-.section a:link:after, .section a:visited:after {
+#interests a:link:after, .section a:visited:after {
   content: " \2014 " attr(href);
   font-size: 9pt;
   color: #666;
 }
-.section p a:link:after, .section p a:visited:after {
+#interests p a:link:after, .section p a:visited:after {
   content: " (" attr(href) ") ";
   font-size: 9pt;
   color: #666;
@@ -654,7 +662,8 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 
   <h3 id='google' itemprop='jobTitle'>Sr. Software Engineer</h3>
   <h4 class='python java javascript linux git perforce sql nosql'
-    >Google Vendor &mdash; Sistemas Globales S.A.</h4>
+    ><a href='http://www.google.com'>Google</a> Vendor &mdash;
+    <a href='http://www.globant.com'>Sistemas Globales S.A.</a></h4>
   <p class='period'>July 2010 &ndash; Current</p>
 
   <p>Developed ETL pipelines in Java for a finance datawarehouse using
@@ -673,7 +682,7 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 <div class='experience' id='lambda'>
   <h3>Developer</h3>
   <h4 class='python javascript bash linux svn sql'
-    >Lambda Sistemas</h4>
+    ><a href='http://www.fierro-soft.com.ar'>Lambda Sistemas</a></h4>
   <p class='period'>January 2010 &ndash; July 2010</p>
 
   <p>Maintained and expanded a homegrown ERP, CMS, CRM and HRM multiplatform
@@ -687,7 +696,8 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 
 <div class='experience' id='bejerman'>
   <h3>Developer</h3>
-  <h4 class='javascript svn sql windows'>Bejerman S.A.</h4>
+  <h4 class='javascript svn sql windows'
+    ><a href='http://www.bejerman.com'>Bejerman S.A.</a></h4>
   <p class='period'>May 2008 &ndash; December 2009</p>
 
   <p>Maintained legacy internal systems ranging from applications for Customer
@@ -699,7 +709,8 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 
 <div class='experience' id='prominente'>
   <h3>Technical Support</h3>
-  <h4 class='windows'>Prominente S.A.</h4>
+  <h4 class='windows'
+    ><a href='http://www.prominente.com.ar'>Prominente S.A.</a></h4>
   <p class='period'>July 2007 &ndash; December 2007</p>
 
   <p>Installed and maintained Windows and Linux desktops and servers for over 2000 employees.
@@ -711,11 +722,20 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 
 <div class='experience' id='edvsa'>
   <h3>Connectionist</h3>
-  <h4>EDVSA</h4>
+  <h4><a href='http://www.edvsa.com'>EDVSA</a></h4>
   <p class='period'>(Summer job) December 2006 &ndash; March 2007</p>
 
   <p>Drew technical layouts and diagrams to be used on building sites.
     Helped on the confection of technical tender budgets (budget for bid).
+    Installed measurement instruments to be controlled by PLC.</p>
+</div>
+
+<div class='experience' id='meyer'>
+  <h3>Instrumentist Intern</h3>
+  <h4><a href='http://www.meieryfischer.com.ar'>Meier & Fischer</a></h4>
+  <p class='period'>March 2005 &ndash; July 2005</p>
+
+  <p>Calibrated mechanical and electronic measurement instruments.
     Installed measurement instruments to be controlled by PLC.</p>
 </div>
 
@@ -725,22 +745,31 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 
   <h3 id='uade'>B.S. in Informatics Engineering</h3>
   <h4 class='java c-lang linux windows sql'
-      itemprop='alumniOf'>Universidad Argentina de la Empresa</h4>
+      ><a href='http://www.uade.edu.ar' itemprop='alumniOf'
+      >Universidad Argentina de la Empresa</a></h4>
   <p class='period'>2006 &ndash; Current</p>
-  <p>Estimated graduation date: December 2012.</p>
+  <p>Estimated graduation date: July 2013.</p>
 </div>
 
 <div class='section' id='interests'>
   <h2>Projects &amp; Interests</h2>
 
+  <h3>Project Barley Wine</h3>
+  <p>Code documentation project based on Python and git.</p>
+  <!-- Further information available on request if you're reading this.-->
+
   <h3><a href='http://stackoverflow.com/users/34813/voyager'
     title='voyager' rel='me'>Stack Overflow</a></h3>
   <p>Written 350 answers. Active in javascript, python, html, css, jquery.</p>
 
-  <h3 class='python'><a href='http://code.google.com/p/google-visualization-python/'>Google visualization Python API</a></h3>
+  <h3 class='python'><a
+    href='http://code.google.com/p/google-visualization-python/'
+    >Google visualization Python API</a></h3>
   <p>Python API that generates Google Visualization API URLs. Involvement: Simple bugfix in import.</p>
 
-  <h3 class='python'><a href='https://github.com/estebank/text-sherlock'>Text Sherlock</a></h3>
+  <h3 class='python'><a
+    href='https://github.com/estebank/text-sherlock'
+    >Text Sherlock</a></h3>
   <p>Text search engine with indexer and a front end web interface to search. Code clean up and extention of functionality.</p>
 
   <h3 class='javascript'><a href='https://github.com/estebank/jsmk'>jsmk</a></h3>
@@ -755,14 +784,22 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </div>
 </div>
 <div class='footer'>
-  <p><a href='https://plus.google.com/105658180396282744760' rel='me'>Google+ profile</a></p>
+  <p><a href='https://plus.google.com/105658180396282744760' rel='me'
+    >Google+ profile</a></p>
   <p><a href='https://github.com/estebank' rel='me'>github profile</a></p>
-  <p><a href='http://code.google.com/u/105658180396282744760/' rel='me'>Google code profile</a></p>
-  <p><a href='http://slashdot.org/~vgerclover' rel='me'><code>/.</code> profile</a></p>
-  <p><a href='http://meta.stackoverflow.com/users/130127/perbert' rel='me'>Meta StackOverflow profile</a></p>
-  <p><a href='https://careers.stackoverflow.com/estebank' rel='me'>Careers StackOverflow</a></p>
-  <p style='display:none;'><a href='http://steamcommunity.com/id/estebank' rel='me'>Steam profile</a></p>
-  <p class='source'><a href='https://github.com/estebank/resume/blob/master/resume.html'>View Source</a></p>
+  <p><a href='http://code.google.com/u/105658180396282744760/' rel='me'
+    >Google code profile</a></p>
+  <p><a href='http://slashdot.org/~vgerclover' rel='me'
+    ><code>/.</code> profile</a></p>
+  <p><a href='http://meta.stackoverflow.com/users/130127/perbert' rel='me'
+    >Meta StackOverflow profile</a></p>
+  <p><a href='https://careers.stackoverflow.com/estebank' rel='me'
+    >Careers StackOverflow</a></p>
+  <p style='display:none;'><a href='http://steamcommunity.com/id/estebank'
+    rel='me'>Steam profile</a></p>
+  <p class='source'><a
+    href='https://github.com/estebank/resume/blob/master/resume.html'
+    >View Source</a></p>
 </div>
 <script>
 var _gaq = _gaq || [];
