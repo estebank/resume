@@ -36,6 +36,11 @@ h1 {
   clear: none;
   height: 50px;
   overflow: hidden;
+  -webkit-transition: opacity 700ms ease;
+  -moz-transition: opacity 700ms ease;
+  -o-transition: opacity 700ms ease;
+  transition: opacity 700ms ease;
+  opacity: 0.0;
 }
 p, li {
   font-family: Helvetica, Arial, sans-serif;
@@ -103,6 +108,11 @@ h2 {
   max-width: 140px;
   padding-left: 1pt;
   padding-right: 1pt;
+  opacity: 0.0; /* Webfont delays to load, mask it with fade in */
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
 }
 h3 {
   font-family: "Noticia Text", serif;
@@ -887,5 +897,13 @@ _gaq.push(['_trackPageview']);
   $('.photo').after(qr_code_card);
 })();
 </script>
+<style type='text/css' media='all'>
+h1 {
+  opacity: 1.0;
+}
+h2 {
+  opacity: 1.0;
+}
+</style>
 </body>
 </html>
