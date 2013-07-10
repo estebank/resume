@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
+<meta charset='utf-8'>
 <title>Esteban Kuber's Resume</title>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400&text=EstebanK%C3%BCbr'
     rel='stylesheet' type='text/css'>
@@ -10,7 +11,7 @@
     rel='stylesheet' type='text/css'>
 <style type='text/css' media='all'>
 body {
-  background-color: #F1F1F1;
+  background: #F1F1F1;
   background: -webkit-radial-gradient(top center, circle, #F1F1F1, #AAA);
   background: -moz-radial-gradient(top center, circle, #F1F1F1, #AAA);
   background: -ms-radial-gradient(top center, circle, #F1F1F1, #AAA);
@@ -164,19 +165,18 @@ div.timeline {
   float: right;
 }
 div.timeline p {
-  background-color: #CCC;
-  background-image: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), top(#CCC));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #CCC 60px);
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #CCC 60px);
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #CCC 60px);
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #CCC 60px);
+  background: #CCC;
+  background: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), top(#CCC));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #CCC 60px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #CCC 60px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #CCC 60px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #CCC 60px);
   text-align: right;
   margin-top: 1px;
   margin-bottom: 1px;
   padding-right: 10px;
   text-shadow: white 0 0 5px;
   font-size: 12px;
-  height: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -186,7 +186,7 @@ div.timeline div {
   overflow: hidden;
   white-space: nowrap;
 }
-div.timeline div p.tick {
+div.timeline div.tick p.tick {
   width: 14%;
   margin: 0 -1px 0 0;
   padding: 0;
@@ -279,11 +279,13 @@ div.timeline h4 {
 .end-dec {
 }
 .start-earlier {
-  background-image: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#CCC));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #CCC 10px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #CCC 10px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #CCC 10px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #CCC 10px) !important;
+  background: #CCC;
+  background: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#CCC));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #CCC 10px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #CCC 10px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #CCC 10px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #CCC 10px);
+  background: linear-gradient(left, #FFFFFF 0, #CCC 10px);
 }
 .start-y2007 {
   margin-left: 0;
@@ -337,61 +339,77 @@ p.end-current {
 div.timeline p.go-up {
   margin-top: -15px;
 }
-p.language {
-  background-image: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#7BA7E1));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px) !important;
+div.timeline p.language {
+  background: #7BA7E1;
+  background: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#7BA7E1));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #7BA7E1 60px);
+  background: linear-gradient(left, #FFFFFF 0, #7BA7E1 60px);
 }
-p.framework {
-  background-image: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#80B584));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #80B584 60px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #80B584 60px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #80B584 60px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #80B584 60px) !important;
+div.timeline p.framework {
+  background: #80B584;
+  background: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#80B584));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #80B584 60px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #80B584 60px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #80B584 60px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #80B584 60px);
+  background: linear-gradient(left, #FFFFFF 0, #80B584 60px);
 }
-p.database {
-  background-image: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#FFCE73));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FFCE73 60px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #FFCE73 60px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #FFCE73 60px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #FFCE73 60px) !important;
+div.timeline p.database {
+  background: #FFCE73;
+  background: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#FFCE73));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #FFCE73 60px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #FFCE73 60px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #FFCE73 60px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #FFCE73 60px);
+  background: linear-gradient(left, #FFFFFF 0, #FFCE73 60px);
 }
-p.vcs {
-  background-image: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#FF8E8E));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px) !important;
+div.timeline p.vcs {
+  background: #FF8E8E;
+  background: -webkit-gradient(linear, left top, 60px top, from(#FFFFFF), to(#FF8E8E));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #FF8E8E 60px);
+  background: linear-gradient(left, #FFFFFF 0, #FF8E8E 60px);
 }
-p.language.go-up, p.language.start-earlier {
-  background-image: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#7BA7E1));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px) !important;
+div.timeline p.language.go-up, div.timeline p.language.start-earlier {
+  background: #7BA7E1;
+  background: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#7BA7E1));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #7BA7E1 10px);
+  background: linear-gradient(left, #FFFFFF 0, #7BA7E1 10px);
 }
-p.framework.go-up, p.framework.start-earlier {
-  background-image: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#80B584));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #80B584 10px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #80B584 10px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #80B584 10px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #80B584 10px) !important;
+div.timeline p.framework.go-up, div.timeline p.framework.start-earlier {
+  background: #80B584;
+  background: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#80B584));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #80B584 10px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #80B584 10px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #80B584 10px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #80B584 10px);
+  background: linear-gradient(left, #FFFFFF 0, #80B584 10px);
 }
-p.database.go-up, p.database.start-earlier {
-  background-image: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#FFCE73));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FFCE73 10px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #FFCE73 10px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #FFCE73 10px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #FFCE73 10px) !important;
+div.timeline p.database.go-up, div.timeline p.database.start-earlier {
+  background: #FFCE73;
+  background: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#FFCE73));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #FFCE73 10px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #FFCE73 10px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #FFCE73 10px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #FFCE73 10px);
+  background: linear-gradient(left, #FFFFFF 0, #FFCE73 10px);
 }
-p.vcs.go-up, p.vcs.start-earlier {
-  background-image: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#FF8E8E));
-  background-image: -webkit-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px) !important;
-  background-image: -moz-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px) !important;
-  background-image: -ms-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px) !important;
-  background-image: -o-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px) !important;
+div.timeline p.vcs.go-up, div.timeline p.vcs.start-earlier {
+  background: #FF8E8E;
+  background: -webkit-gradient(linear, left top, 10px top, from(#FFFFFF), to(#FF8E8E));
+  background: -webkit-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px);
+  background: -moz-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px);
+  background: -ms-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px);
+  background: -o-linear-gradient(left, #FFFFFF 0, #FF8E8E 10px);
+  background: linear-gradient(left, #FFFFFF 0, #FF8E8E 10px);
 }
 h4.language {
   color: #000033;
@@ -404,6 +422,9 @@ h4.database {
 }
 h4.vcs {
   color: #330000;
+}
+.timeline li {
+  list-style-type: none;
 }
 .footer {
   max-width: 800px;
@@ -450,7 +471,6 @@ body {
 }
 h1 {
   margin: 2px 0 10px 2px;
-  color: #555;
 }
 h2 {
   float: none;
@@ -480,11 +500,42 @@ address img {
   float: none;
   margin: 0;
 }
-.timeline {
+div.tick {
   display: none;
 }
-ul.skills {
-  display: block;
+ul li p {
+  display: inline;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  background-color: white !important;
+  background: none !important;
+}
+ul li p.go-up {
+  display: none;
+}
+ul li p:after {
+  content: ', ';
+}
+ul li p:last-child:after {
+  content: '.';
+}
+div.timeline h4 {
+  float: none;
+  display: inline;
+  width: auto;
+  margin: 0;
+  color: #333;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+}
+div.timeline h4:after {
+  content: ': ';
+}
+.timeline li {
+  list-style-type: disc;
 }
 .footer {
   display: none;
@@ -558,6 +609,9 @@ p {
   size: auto;
   margin: 10mm 10mm 15mm 15mm;
 }
+.content {
+  background: white;
+}
 body {
   margin: 0px;
   padding: 0mm;
@@ -568,8 +622,42 @@ p {
 h3, h4, p.period {
   page-break-after: avoid;
 }
-.timeline {
+div.tick {
   display: none;
+}
+ul li p {
+  display: inline;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  background-color: white !important;
+  background: none !important;
+}
+ul li p.go-up {
+  display: none;
+}
+ul li p:after {
+  content: ', ';
+}
+ul li p:last-child:after {
+  content: '.';
+}
+div.timeline h4 {
+  float: none;
+  display: inline;
+  width: auto;
+  margin: 0;
+  color: #333;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+}
+div.timeline h4:after {
+  content: ': ';
+}
+.timeline li {
+  list-style-type: disc;
 }
 ul.skills {
   display: block;
@@ -604,15 +692,14 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </head>
 <body>
 <div class='content' itemscope itemtype='http://schema.org/Person'>
-<h1><span itemprop='givenName'>Esteban</span>
-  <span itemprop='familyName' style='display: none'>Kuber</span>
-  <span>K&uuml;ber</span>
+<h1 itemprop='name'>
+  <span itemprop='givenName'>Esteban</span>
+  <span itemprop='familyName' id='familyName'>Kuber</span>
   </h1>
 <address>
   <img alt='Esteban Kuber' itemprop='image' class='photo'
     src='https://lh6.googleusercontent.com/-4aXn6mfBoLM/UPi0cuHbJqI/AAAAAAAAjnU/ZDN3_RjqLJU/s196/photo.jpg' />
-  <p><a href='mailto:resume@kuber.com.ar'
-    itemprop='email'>resume@kuber.com.ar</a></p>
+  <p><a href='mailto:resume@kuber.com.ar' itemprop='email'>resume@kuber.com.ar</a></p>
   <p>Amsterdam, Netherlands</p>
   <span itemprop='nationality' style='display: none'>Argentina</span>
   <span style='display: none' itemprop='nationality'>Italia</span>
@@ -622,82 +709,79 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 </address>
 
 <div id='intro'>
-  <p>Argentinean/Italian Software Developer, fluent in both English and Spanish (native).</p>
+  <p itemprop='description'>Argentinean/Italian Software Developer, fluent in both English and Spanish (native).</p>
 </div>
 
 <div class='section'>
   <h2 id='skills'>Skills</h2>
 
   <div class='timeline'>
-    <div><p class='tick'>2007</p><p class='tick'>2008</p><p class='tick'>2009</p><p class='tick'>2010</p><p class='tick'>2011</p><p class='tick'>2012</p><p class='tick'>2013</p></div>
+    <div class='tick'><p class='tick'>2007</p><p class='tick'>2008</p><p class='tick'>2009</p><p class='tick'>2010</p><p class='tick'>2011</p><p class='tick'>2012</p><p class='tick'>2013</p></div>
 
-    <h4 class='language'>Languages</h4>
-    <p class='language python start-y2007 end-current'>Python</p>
-    <p class='language java start-y2007 start-jul end-y2008'>Java</p>
-    <p class='language java start-y2010 start-jul end-y2013 end-mar go-up'>Java</p>
-    <p class='language javascript start-y2008 start-jul end-current'>Javascript</p>
-    <!--p class='language start-y2008 start-jul end-y2009'>ASP.Net</p-->
-    <p class='language c-lang start-earlier end-y2008 end-jun'>C</p>
-    <p class='language linux start-earlier end-current'>Bash</p>
-    <!--p class='language linux start-y2010 start-jul end-current'>Others</p-->
+    <ul>
+    <li>
+      <h4 class='language'>Languages</h4>
+      <p class='language python start-y2007 end-current'>Python</p>
+      <p class='language java start-y2007 start-jul end-y2008'>Java</p>
+      <p class='language java start-y2010 start-jul end-y2013 end-mar go-up'>Java</p>
+      <p class='language javascript start-y2008 start-jul end-current'>Javascript</p>
+      <!--p class='language start-y2008 start-jul end-y2009'>ASP.Net</p-->
+      <p class='language c-lang start-earlier end-y2008 end-jun'>C</p>
+      <p class='language linux start-earlier end-current'>Bash</p>
+      <!--p class='language linux start-y2010 start-jul end-current'>Others</p-->
+    </li>
+    <li>
+      <h4 class='framework'>Frameworks</h4>
+      <p class='framework python java start-y2010 start-jul end-y2012 gae'>Google App Engine</p>
+      <p class='framework python start-y2008 end-y2008'>Django</p>
+      <p class='framework python start-y2012 start-jun end-y2013 end-aug go-up'>Django</p>
+      <p class='framework javascript start-y2009 end-y2011'>JQuery</p>
+      <p class='framework javascript start-y2013 start-mar end-current go-up'>JQuery</p>
+      <p class='framework javascript start-y2011 start-jul end-y2012'>Google Closure</p>
+      <p class='framework javascript start-y2010 start-jul end-y2012'>Google Visualization API</p>
+      <p class='framework python start-y2011 end-y2012 end-jun'>GData API</p>
+      <p class='framework java start-y2010 start-jul end-y2013 end-feb'>Protocol Buffers</p>
+      <p class='framework java start-y2010 start-jul end-y2012'>Google Flume</p>
+      <p class='framework java start-y2010 start-jul end-y2013 end-feb'>Google Cloud Technology</p>
+    </li>
+    <li>
+      <h4 class='database'>Storage</h4>
+      <p class='database sql start-y2007 start-jul end-current'>SQL</p>
+      <p class='database nosql start-y2010 start-jul end-current'>NoSQL</p>
+      <p class='database sql start-y2007 start-jul end-y2009'>MS SQL Server</p>
+      <p class='database sql start-y2008 end-y2010 end-jun'>PostgreSQL</p>
+      <p class='database sql start-y2013 start-mar end-current go-up'>PostgreSQL</p>
+      <p class='database sql start-y2010 start-jul end-current'>MySQL</p>
+      <p class='database nosql start-y2010 start-jul end-y2013 end-feb'>BigTable</p>
+      <p class='database nosql start-y2010 start-jul end-y2013 end-feb gae'>Google App Engine Datastore</p>
+      <p class='database sql start-y2011 start-jul end-y2012 gae'>Google Cloud SQL</p>
+    </li>
+    <li>
+      <h4 class='vcs'>VCS</h4>
+      <p class='vcs git start-y2011 start-mar end-current'><kbd>git</kbd></p>
+      <p class='vcs perforce start-y2010 start-jul end-y2012 end-feb'>Perforce</p>
+      <p class='vcs svn start-y2008 end-y2010'>SVN</p>
+    </li>
+    <li>
+      <h4 class='os'>OS</h4>
+      <p class='os linux start-earlier end-current'>Linux (Arch/Debian/Slackware/Ubuntu)</p>
+      <p class='os windows start-earlier end-y2012 end-jun'>Windows (2000/XP/7)</p>
+      <p class='os start-y2010 start-jul end-current'>Mac OS X</p>
+    </li>
+    </ul>
 
-    <h4 class='framework'>Frameworks</h4>
-    <p class='framework python java start-y2010 start-jul end-y2012 gae'>Google App Engine</p>
-    <p class='framework python start-y2008 end-y2008'>Django</p>
-    <p class='framework python start-y2012 start-jun end-current go-up'>Django</p>
-    <p class='framework javascript start-y2009 end-y2011'>JQuery</p>
-    <p class='framework javascript start-y2013 start-mar end-current go-up'>JQuery</p>
-    <p class='framework javascript start-y2011 start-jul end-y2012'>Google Closure</p>
-    <p class='framework javascript start-y2010 start-jul end-y2012'>Google Visualization API</p>
-    <p class='framework python start-y2011 end-y2012 end-jun'>GData API</p>
-    <p class='framework java start-y2010 start-jul end-y2013 end-feb'>Protocol Buffers</p>
-    <p class='framework java start-y2010 start-jul end-y2012'>Google Flume</p>
-    <p class='framework java start-y2010 start-jul end-y2013 end-feb'>Google Cloud Technology</p>
-
-    <h4 class='database'>Storage</h4>
-    <p class='database sql start-y2007 start-jul end-current'>SQL</p>
-    <p class='database nosql start-y2010 start-jul end-current'>NoSQL</p>
-    <p class='database sql start-y2007 start-jul end-y2009'>MS SQL Server</p>
-    <p class='database sql start-y2008 end-y2010 end-jun'>PostgreSQL</p>
-    <p class='database sql start-y2013 start-mar end-current go-up'>PostgreSQL</p>
-    <p class='database sql start-y2010 start-jul end-current'>MySQL</p>
-    <p class='database nosql start-y2010 start-jul end-y2013 end-feb'>BigTable</p>
-    <p class='database nosql start-y2010 start-jul end-y2013 end-feb gae'>Google App Engine Datastore</p>
-    <p class='database sql start-y2011 start-jul end-y2012 gae'>Google Cloud SQL</p>
-
-    <h4 class='vcs'>VCS</h4>
-    <p class='vcs git start-y2011 start-mar end-current'><kbd>git</kbd></p>
-    <p class='vcs perforce start-y2010 start-jul end-y2012 end-feb'>Perforce</p>
-    <p class='vcs svn start-y2008 end-y2010'>SVN</p>
-
-    <h4 class='os'>OS</h4>
-    <p class='os linux start-earlier end-current'>Linux (Arch/Debian/Slackware/Ubuntu)</p>
-    <p class='os windows start-earlier end-y2012 end-jun'>Windows (2000/XP/7)</p>
-    <p class='os start-y2010 start-jul end-current'>Mac OS X</p>
-
-    <div><p class='tick'>2007</p><p class='tick'>2008</p><p class='tick'>2009</p><p class='tick'>2010</p><p class='tick'>2011</p><p class='tick'>2012</p><p class='tick'>2013</p></div>
+    <div class='tick'><p class='tick'>2007</p><p class='tick'>2008</p><p class='tick'>2009</p><p class='tick'>2010</p><p class='tick'>2011</p><p class='tick'>2012</p><p class='tick'>2013</p></div>
 
   </div><div style='clear: both;'></div>
-  <ul class='skills'>
-    <li>Programming languages: Python, Java, JavaScript, Bash</li>
-    <li>Frameworks/Libraries: Google App Engine, Google Closure,
-      Google Visualization API, JQuery, GData API,
-      Protocol Buffers, Django, others</li>
-    <li>SCMS: <kbd>git</kbd>, Perforce, SVN</li>
-    <li>RDBMS: PostgreSQL, MySQL, Google Cloud SQL, MS SQL Server</li>
-    <li>NoSQL Databases: BigTable, Google App Engine Datastore, others</li>
-    <li>Proficient with HTML+CSS, HTML5 knowledge</li>
-    <li>OS: Linux (Arch, Debian, Slackware, Ubuntu), Windows 2000/XP/7</li>
-  </ul>
 </div>
 
 <div class='section experience'>
   <h2 id='experience'>Experience</h2>
 
-  <h3 id='travelbird' itemprop='jobTitle'>Software Developer</h3>
+  <h3 id='travelbird'>Software Developer</h3>
   <h4 class='python django javascript linux git sql postgresql'
     ><a href='http://travelbird.nl'>TravelBird</a></h4>
-  <p class='period'>March 2013 &ndash; Current</p>
+  <p class='period'>March 2013 &ndash; August 2013</p>
 
   <p>Django backend and Javascript frontend web development.<!-- Rewrite of main application. --></p>
 
@@ -780,12 +864,12 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 <div class='section'>
   <h2 id='education'>Education</h2>
 
-  <h3 id='uade'>B.S. in Informatics Engineering</h3>
+  <h3 id='uade'>B.S. in Informatics Engineering <small>(unfinished)</small></h3>
   <h4 class='java c-lang linux windows sql'
       ><a href='http://www.uade.edu.ar' itemprop='alumniOf'
       >Universidad Argentina de la Empresa</a></h4>
-  <p class='period'>2006 &ndash; Current</p>
-  <p>Estimated graduation date: July 2013.</p>
+  <p class='period'>2006 &ndash; 2012</p>
+  <p>Left unfinished after moving between continents.</p>
 
   <h3 id='itc'>Electronics Technician</h3>
   <h4><a href='http://www.colegioitc.com.ar' itemprop='alumniOf'
@@ -797,8 +881,8 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
 <div class='section' id='interests'>
   <h2>Projects &amp; Interests</h2>
 
-  <h3>Project Barley Wine</h3>
-  <p>Code documentation project based on Python and git.</p>
+  <h3>Project Stout (Eclaireur)</h3>
+  <p><kbd>git</kbd> and code navigation tool.</p>
   <!-- Further information available on request if you're reading this.-->
 
   <h3><a href='http://stackoverflow.com/users/34813/voyager'
@@ -854,52 +938,17 @@ _gaq.push(['_trackPageview']);
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+
+document.getElementById('familyName').innerText = 'Küber';
 </script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-<script>
-(function (){
-  var TIME = 250;
-  var DIM_OPACITY = .5;
-
-  var toggled = false;
-
-  var highlight = function(class_name) {
-    $('.timeline p').not('.tick').not(class_name).fadeTo(TIME, DIM_OPACITY);
-    var job_titles_to_dim = $('.section h4').parent().not('.timeline')
-        .children().filter('h4').not(class_name);
-    job_titles_to_dim.fadeTo(TIME, DIM_OPACITY);
-    job_titles_to_dim.siblings().not('h2').not('div').fadeTo(TIME, DIM_OPACITY);
-  };
-
-  var unhighlight = function() {
-    if (!toggled) {
-      $('.timeline p').not('.tick').stop(true).fadeTo(TIME, 1);
-      var job_titles_to_dim = $('.section h4').parent().not('.timeline')
-          .children().filter('h4');
-      job_titles_to_dim.stop(true).fadeTo(TIME, 1);
-      job_titles_to_dim.siblings().stop(true).fadeTo(TIME, 1);
-    }
-  };
-
-  // Highlight related skills and relevant employers on hover.
-  $('.timeline p').not('.tick').hover(function() {
-    if (!toggled) {
-      highlight('.' + this.className.split(' ')[1]);
-    }
-  }, unhighlight);
-
-  // Highlight toggle that is nice to hover highlight.
-  $('.timeline p').not('.tick').click(function() {
-    if (toggled) {
-      toggled = false;
-      unhighlight();
-    } else {
-      toggled = true;
-      highlight('.' + this.className.split(' ')[1]);
-    }
-  });
-})();
-</script>
+<style type='text/css' media='all'>
+h1 {
+  opacity: 1.0;
+}
+h2 {
+  opacity: 1.0;
+}
+</style>
 <script src='http://d-project.googlecode.com/svn/trunk/misc/qrcode/js/qrcode.js'></script>
 <script>
 (function () {
@@ -917,17 +966,14 @@ _gaq.push(['_trackPageview']);
   var qr = qrcode(6, 'M');
   qr.addData(mecard);
   qr.make();
-  var qr_code_card = $(qr.createImgTag()).addClass('qr-code');
-  $('.photo').after(qr_code_card);
+  var div = document.createElement('div');
+  div.innerHTML = qr.createImgTag();
+  var qr_code_card = div.firstChild;
+  qr_code_card.className = 'qr-code';
+  console.log(qr_code_card);
+  var photo = document.getElementsByClassName('photo')[0];
+  photo.parentElement.insertBefore(qr_code_card, photo);
 })();
 </script>
-<style type='text/css' media='all'>
-h1 {
-  opacity: 1.0;
-}
-h2 {
-  opacity: 1.0;
-}
-</style>
 </body>
 </html>
