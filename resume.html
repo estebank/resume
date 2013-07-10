@@ -3,7 +3,7 @@
 <head>
 <meta charset='utf-8'>
 <title>Esteban Kuber's Resume</title>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400&text=EstebanK%C3%BCbr'
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400&text=EstebanK%C3%BCbr%20'
     rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Pontano+Sans:400&text=SklEenatsbrxpicduoPj%26%0AI'
     rel='stylesheet' type='text/css'>
@@ -86,7 +86,7 @@ img.qr-code {
 }
 ul {
   margin-top: 0;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 ul li {
   margin-bottom: 4px;
@@ -459,6 +459,17 @@ h4.vcs {
   text-shadow: none;
 }
 </style>
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26016890-1']);
+_gaq.push(['_setDomainName', 'kuber.com.ar']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 <style type='text/css'
   media='only screen and (max-width: 610px), only screen and (max-device-width: 610px), only screen and (-webkit-device-pixel-ratio:0.75)'>
 body {
@@ -621,6 +632,9 @@ p {
 }
 h3, h4, p.period {
   page-break-after: avoid;
+}
+.timeline {
+  margin-top: -25px;
 }
 div.tick {
   display: none;
@@ -929,16 +943,6 @@ m0eu3JY+3B9RilPSoH448ObZt7K2IZoAHNkmf//Z' />
     >View Source</a></p>
 </div>
 <script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-26016890-1']);
-_gaq.push(['_setDomainName', 'kuber.com.ar']);
-_gaq.push(['_trackPageview']);
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
 document.getElementById('familyName').innerText = 'Küber';
 </script>
 <style type='text/css' media='all'>
@@ -970,7 +974,6 @@ h2 {
   div.innerHTML = qr.createImgTag();
   var qr_code_card = div.firstChild;
   qr_code_card.className = 'qr-code';
-  console.log(qr_code_card);
   var photo = document.getElementsByClassName('photo')[0];
   photo.parentElement.insertBefore(qr_code_card, photo);
 })();
