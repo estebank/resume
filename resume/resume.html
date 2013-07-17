@@ -323,26 +323,28 @@ h2 {
 <script src='qrcode.js'></script>
 <script>
 (function () {
-  // When printing replace my mug for a QR code card.
-  var name = 'Esteban Kuber';
-  var tel = '+5491133786367';
-  var url = 'esteban.kuber.com.ar/resume';
-  var mail = '\x65\x73\x74\x65\x62\x61\x6e\x40kuber\x2e\x63\x6f\x6d\x2ear';
-  var mecard = 'MECARD:N:{name};TEL:{tel};URL:{url};EMAIL:{mail};;'
-      .replace('{name}', name)
-      .replace('{tel}', tel)
-      .replace('{url}',url)
-      .replace('{mail}', mail);
+    // When printing replace my mug for a QR code card.
+    if (document.getElementsByClassName) {  // Sane browser (IE>8)
+        var name = 'Esteban Kuber';
+        var tel = '+5491133786367';
+        var url = 'esteban.kuber.com.ar/resume';
+        var mail = '\x65\x73\x74\x65\x62\x61\x6e\x40kuber\x2e\x63\x6f\x6d\x2ear';
+        var mecard = 'MECARD:N:{name};TEL:{tel};URL:{url};EMAIL:{mail};;'
+            .replace('{name}', name)
+            .replace('{tel}', tel)
+            .replace('{url}',url)
+            .replace('{mail}', mail);
 
-  var qr = qrcode(6, 'M');
-  qr.addData(mecard);
-  qr.make();
-  var div = document.createElement('div');
-  div.innerHTML = qr.createImgTag();
-  var qr_code_card = div.firstChild;
-  qr_code_card.className = 'qr-code';
-  var photo = document.getElementsByClassName('photo')[0];
-  photo.parentElement.insertBefore(qr_code_card, photo);
+        var qr = qrcode(6, 'M');
+        qr.addData(mecard);
+        qr.make();
+        var div = document.createElement('div');
+        div.innerHTML = qr.createImgTag();
+        var qr_code_card = div.firstChild;
+        qr_code_card.className = 'qr-code';
+        var photo = document.getElementsByClassName('photo')[0];
+        photo.parentElement.insertBefore(qr_code_card, photo);
+    }
 })();
 </script>
 </body>
