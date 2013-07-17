@@ -1,0 +1,36 @@
+h2 {
+    width: 140px;
+    margin: 0 0 0 -70px;
+}
+
+div.tick {
+  display: none;
+}
+ul {
+  margin-left: 0;
+}
+ul li p {
+  display: inline;
+  margin: 0 6px 0 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  background-color: white !important;
+  background: none !important;
+}
+ul li p.go-up {
+  display: none;
+}
+div.timeline h4 {
+  float: none;
+  display: inline;
+  width: auto;
+  margin: 0 10px 0 0;
+  color: #333;
+}
+.timeline li {
+  list-style-type: disc;
+}
+ul.skills {
+  display: block;
+}

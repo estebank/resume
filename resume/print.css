@@ -116,9 +116,6 @@ div.timeline h4:after {
 .timeline li {
   list-style-type: disc;
 }
-ul.skills {
-  display: block;
-}
 .period {
   text-shadow: none;
 }

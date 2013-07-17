@@ -1,9 +1,16 @@
-div.tick {
-    display: none;
+div.timeline div.tick p.tick {
+    display: inline;
+    zoom: 1;
 }
-.go-up {
-    display: none;
+.content, .footer {
+    width: 700px;
 }
-.qr-code {
-    display: none;
+.experience {
+    padding-top: 0;
+}
+.experience h2 {
+  padding-top: 10px;
+}
+.experience h3#travelbird {
+  border: none;
 }
