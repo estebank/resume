@@ -1,6 +1,12 @@
 h2 {
-    width: 140px;
-    margin: 0 0 0 -70px;
+    width: 100px;
+    margin: 0 0 0 -75px !important;
+}
+@media print {
+  h2 {
+      width: 100px;
+      margin: 0 0 0 -60px !important;
+  }
 }
 div.tick {
   display: none;
@@ -19,6 +25,9 @@ ul li p {
 }
 ul li p.go-up {
   display: none;
+}
+div.timeline {
+  margin-top: 0 !important;
 }
 div.timeline h4 {
   float: none;

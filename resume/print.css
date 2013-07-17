@@ -12,6 +12,9 @@ h2 {
 }
 .content {
   box-shadow: none;
+  border: none;
+  margin: 0;
+  background-color: white;
 }
 address {
   display: inline;
