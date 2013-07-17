@@ -43,5 +43,8 @@ app = webapp2.WSGIApplication(routes=[
         webapp2.Route( r'/google5ddcdcec3c24d2d5.html',
             lambda request, *args, **kwargs: webapp2.Response(
                 'google-site-verification: google5ddcdcec3c24d2d5.html')),
+        webapp2.Route( r'/robots.txt',
+            lambda request, *args, **kwargs: webapp2.Response(
+                'User-agent: *\nDisallow:')),
     ],
     debug=True)
