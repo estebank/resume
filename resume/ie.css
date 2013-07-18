@@ -55,13 +55,3 @@ div.timeline h4 {
 ul.skills {
   display: block;
 }
-h2 {
-    width: 100px;
-    margin: 0 0 0 -75px !important;
-}
-@media print {
-  h2 {
-      width: 100px;
-      margin: 0 0 0 -60px !important;
-  }
-}
