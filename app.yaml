@@ -17,9 +17,22 @@ handlers:
 - url: /static
   static_dir: static
 
+
+- url: /resume/
+  static_files: resume/resume.html
+  upload: resume/resume\.html
+
 - url: /resume/(.+)
   static_files: resume/\1
   upload: resume/(.*)\.(png|css|jpeg|jpg|ico|js|gif)
+
+- url: /(robots\.txt)
+  static_files: static/\1
+  upload: static/robots.txt
+
+- url: /(google5ddcdcec3c24d2d5\.html)
+  static_files: static/\1
+  upload: static/google5ddcdcec3c24d2d5\.html
 
 - url: /.*
   script: main.app
