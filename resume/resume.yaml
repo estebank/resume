@@ -1,8 +1,4 @@
 handlers:
-- url: /resume/
-  static_files: resume/resume.html
-  upload: resume/resume\.html
-
 - url: /resume/(.+)
   static_files: resume/\1
   upload: resume/(.*)\.(png|css|jpeg|jpg|ico|js|gif)
