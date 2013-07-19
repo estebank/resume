@@ -15,6 +15,7 @@ h2 {
   border: none;
   margin: 0;
   background-color: white;
+  filter:progid:DXImageTransform.Microsoft.Shadow(enabled=false),
 }
 address {
   display: inline;

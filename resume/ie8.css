@@ -1,0 +1,29 @@
+div.timeline h4 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  float: none;
+  left: 97%;
+  top: 17px;
+  margin: 0;
+  position: relative;
+  width: 300px;
+}
+.timeline li {
+  position: relative;
+}
+h2 {
+  margin: 0 0 0 -140px;
+}
+h3#travelbird {
+  margin-top: -17px;
+}
+@media print {
+  div.timeline h4 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    float: none;
+    left: 0;
+    top: 0;
+    margin: 0 8px 0 0;
+    position: static;
+    width: auto;
+  }
+}

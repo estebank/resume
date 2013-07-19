@@ -14,6 +14,15 @@ body {
   padding: 20px;
   overflow-x: hidden;
   box-shadow: 0 3px 13px 3px #666;
+  /* DIAF */
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=0, Strength=3),
+    progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=90, Strength=5),
+    progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=270, Strength=5),
+    progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=180, Strength=7),
+    progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=45, Strength=3),
+    progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=315, Strength=3),
+    progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=225, Strength=5),
+    progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=135, Strength=5);
 }
 h1 {
   float: left;
@@ -91,8 +100,6 @@ h2 {
   font-size: 18pt;
   font-weight: normal;
   position: relative;
-  border-radius: 7px;
-  background-color: white;
   height: 19pt;
   max-width: 140px;
   padding-left: 1pt;

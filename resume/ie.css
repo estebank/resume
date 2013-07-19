@@ -1,15 +1,14 @@
 .content {
   width: 700px;
-  border-top: 2px solid #AAA;
-  border-left: 3px solid #888;
-  border-right: 3px solid #888;
-  border-bottom: 4px solid #666;
 }
 .footer {
   width: 700px;
 }
 .experience {
   padding-top: 0;
+}
+h2 {
+  margin: 0 0 0 -140px;
 }
 .experience h2 {
   padding-top: 10px;
