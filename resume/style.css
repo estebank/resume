@@ -5,6 +5,8 @@ body {
   background: -ms-radial-gradient(top center, circle, #F1F1F1, #AAA);
   background: -o-radial-gradient(top center, circle, #F1F1F1, #AAA);
   background: radial-gradient(circle at top, #F1F1F1, #AAA);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#BBBBBB', GradientType=0);
+  margin: 0;
 }
 .content {
   max-width: 800px;
@@ -15,7 +17,7 @@ body {
   overflow-x: hidden;
   box-shadow: 0 3px 13px 3px #666;
   /* DIAF */
-  filter:progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=0, Strength=3),
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=0, Strength=3),
     progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=90, Strength=5),
     progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=270, Strength=5),
     progid:DXImageTransform.Microsoft.Shadow(color='gray', Direction=180, Strength=7),
@@ -434,6 +436,7 @@ h4.vcs {
 }
 .footer p {
   text-shadow: #DDD 0 1px 1px, #111 0 -1px 1px;
+  filter: progid:DXImageTransform.Microsoft.Glow(color='#DDDDDD', strength=2);
   font-size: 12px;
   float: left;
   margin-right: 20px;

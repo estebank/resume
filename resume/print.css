@@ -1,6 +1,9 @@
 * {
   opacity: 1 !important;
 }
+body{
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
 h1 {
   color: #555;
 }
