@@ -9,7 +9,7 @@ from javier.cv import JavierCv
 
 protocol = 'http://'
 subdomain_esteban = 'esteban.kuber.com.ar'
-subdomain_javier = 'esteban.kuber.com.ar'
+subdomain_javier = 'javier.kuber.com.ar'
 
 def redirect(path, target=protocol+subdomain_esteban+'/resume/'):
     return webapp2.Route(path, handler=webapp2.RedirectHandler,
