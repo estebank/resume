@@ -37,11 +37,7 @@ img.photo {
 }
 a {
   text-decoration: none;
-  color: #333;
-}
-p a {
-  font-family: Geneva, Tahoma, sans-serif;
-  font-size: 10pt;
+  color: #222;
 }
 p {
   font-size: 10.5pt;
