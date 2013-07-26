@@ -1,3 +1,7 @@
+body {
+  position: relative;
+  min-width: 760px;
+}
 .content {
   width: 700px;
 }
