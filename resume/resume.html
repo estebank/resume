@@ -50,8 +50,8 @@ _gaq.push(['_trackPageview']);
 <address itemprop='address' itemscope itemtype='http://schema.org/PostalAddress'>
   <img alt='Esteban Kuber' itemprop='image' class='photo' src='photo.jpg' />
   <p><a href='mailto:resume@kuber.com.ar' itemprop='email'>resume@kuber.com.ar</a></p>
-  <p><span itemprop='addressLocality'>London</span>,
-    <span itemprop='addressCountry'>United Kingdom</span></p>
+  <p><span itemprop='addressLocality'>San Francisco, CA</span>,
+    <span itemprop='addressCountry'>USA</span></p>
   <!--p itemprop='telephone'> None at the moment </p-->
   <p class='profile'><a href='https://plus.google.com/105658180396282744760?rel=author' rel='me'
     >Google+ profile</a></p>
@@ -59,9 +59,9 @@ _gaq.push(['_trackPageview']);
 </address>
 
 <div id='intro'>
-  <p itemprop='description'>Python Software Developer, fluent in both English and Spanish (native).</p>
+  <p itemprop='description'>Software Developer</p>
   <span itemprop='nationality' style='display: none'>Argentina</span>
-  <span style='display: none' itemprop='nationality'>Italia</span>
+  <span style='display: none' itemprop='nationality'>Italy</span>
 </div>
 
 <div class='section'>
@@ -75,78 +75,112 @@ _gaq.push(['_trackPageview']);
     <ul itemscope itemtype='http://schema.org/ItemList'>
     <li>
       <h4 class='language'>Languages</h4>
-      <p class='language python start-y2007 end-current' itemprop='itemListElement'>Python</p>
-      <p class='language java start-y2007 start-jul end-y2008' itemprop='itemListElement'>Java</p>
-      <p class='language java start-y2010 start-jul end-y2013 end-mar go-up'>Java</p>
-      <p class='language javascript start-y2008 start-jul end-current' itemprop='itemListElement'>Javascript</p>
-      <!--p class='language start-y2008 start-jul end-y2009' itemprop='itemListElement'>ASP.Net</p-->
-      <p class='language c-lang start-earlier end-y2008 end-jun' itemprop='itemListElement'>C</p>
-      <p class='language linux start-earlier end-current' itemprop='itemListElement'>Bash</p>
-      <!--p class='language linux start-y2010 start-jul end-current'>Others</p-->
+      <p class='language python'
+        data-period='2007/01-' itemprop='itemListElement'
+        >Python</p>
+      <p class='language java'
+        data-period='2007/06-2008/12 2010/07-2013/03 2015/01-' itemprop='itemListElement'
+        >Java</p>
+      <p class='language scala'
+        data-period='2015/01-' itemprop='itemListElement'
+        >Scala</p>
+      <p class='language rust'
+        data-period='2015/12-' itemprop='itemListElement'
+        >Rust</p>
+      <p class='language javascript'
+        data-period='2008/07-' itemprop='itemListElement'
+        >Javascript</p>
+      <!--p class='language'
+        data-period='2008/07-2009/12' itemprop='itemListElement'
+        >ASP.Net</p-->
+      <p class='language c-lang'
+        data-period='-2008/06' itemprop='itemListElement'
+        >C</p>
+      <p class='language linux'
+        data-period='-' itemprop='itemListElement'
+        >Bash</p>
     </li>
     <li>
       <h4 class='framework'>Frameworks</h4>
-      <p class='framework python java start-y2010 start-jul end-y2012 gae' itemprop='itemListElement'
+      <p class='framework python java gae'
+        data-period='2010/07-2012/12' itemprop='itemListElement'
         >Google App Engine</p>
-      <p class='framework python start-y2008 end-y2008' itemprop='itemListElement'
+      <p class='framework python'
+        data-period='2008/01-2008/12 2012/06-2013/08' itemprop='itemListElement'
         >Django</p>
-      <p class='framework python start-y2012 start-jun end-y2013 end-aug go-up'
-        >Django</p>
-      <p class='framework javascript start-y2009 end-y2011' itemprop='itemListElement'
+      <p class='framework javascript'
+        data-period='2009/01-2011/12 2013/03-' itemprop='itemListElement'
         >JQuery</p>
-      <p class='framework javascript start-y2013 start-mar end-current go-up'
-        >JQuery</p>
-      <p class='framework javascript start-y2011 start-jul end-y2012' itemprop='itemListElement'
+      <p class='framework javascript'
+        data-period='2011/07-2012/12' itemprop='itemListElement'
         >Google Closure</p>
-      <p class='framework javascript start-y2010 start-jul end-y2012' itemprop='itemListElement'
+      <p class='framework javascript'
+        data-period='2010/07-2012/12' itemprop='itemListElement'
         >Google Visualization API</p>
-      <p class='framework python start-y2011 end-y2012 end-jun' itemprop='itemListElement'
+      <p class='framework python'
+        data-period='2011/01-2012/06' itemprop='itemListElement'
         >GData API</p>
-      <p class='framework java start-y2010 start-jul end-y2013 end-feb' itemprop='itemListElement'
+      <p class='framework java'
+        data-period='2010/07-2013/02' itemprop='itemListElement'
         >Protocol Buffers</p>
-      <p class='framework java start-y2010 start-jul end-y2012' itemprop='itemListElement'
+      <p class='framework java'
+        data-period='2010/07-2012/12' itemprop='itemListElement'
         >Google Flume</p>
-      <p class='framework java start-y2010 start-jul end-y2013 end-feb' itemprop='itemListElement'
+      <p class='framework java'
+        data-period='2010/07-2013/02' itemprop='itemListElement'
         >Google Cloud Technology</p>
     </li>
     <li>
       <h4 class='database'>Storage</h4>
-      <p class='database sql start-y2007 start-jul end-current'>SQL</p>
-      <p class='database nosql start-y2010 start-jul end-current'>NoSQL</p>
-      <p class='database sql start-y2007 start-jul end-y2009' itemprop='itemListElement'
-        >MS SQL Server</p>
-      <p class='database sql start-y2008 end-y2010 end-jun' itemprop='itemListElement'
-        >PostgreSQL</p>
-      <p class='database sql start-y2013 start-mar end-current go-up'>PostgreSQL</p>
-      <p class='database sql start-y2010 start-jul end-current' itemprop='itemListElement'
-        >MySQL</p>
-      <p class='database nosql start-y2010 start-jul end-y2013 end-feb' itemprop='itemListElement'
+      <p class='database sql' data-period='2007/07-' >SQL</p>
+      <p class='database nosql' data-period='2010/07-'>NoSQL</p>
+      <p class='database nosql'
+        data-period='2013/08-' itemprop='itemListElement'
+        >Manhattan</p>
+      <p class='database nosql'
+        data-period='2010/07-2013/02' itemprop='itemListElement'
         >BigTable</p>
-      <p class='database nosql start-y2010 start-jul end-y2013 end-feb gae' itemprop='itemListElement'
+      <p class='database nosql gae'
+        data-period='2010/07-2013/02' itemprop='itemListElement'
         >Google App Engine Datastore</p>
-      <p class='database sql start-y2011 start-jul end-y2012 gae' itemprop='itemListElement'
+      <p class='database sql gae'
+        data-period='2011/07-2012/12' itemprop='itemListElement'
         >Google Cloud SQL</p>
+      <p class='database sql'
+        data-period='2010/07-' itemprop='itemListElement'
+        >MySQL</p>
+      <p class='database sql'
+        data-period='2008/01-2010/06 2013/03-2014/06' itemprop='itemListElement'
+        >PostgreSQL</p>
+      <p class='database sql'
+        data-period='2007/07-2009/12' itemprop='itemListElement'
+        >MS SQL Server</p>
     </li>
     <li>
       <h4 class='vcs'>VCS</h4>
-      <p class='vcs git start-y2011 start-mar end-current' itemprop='itemListElement'><kbd>git</kbd></p>
-      <p class='vcs perforce start-y2010 start-jul end-y2012 end-feb' itemprop='itemListElement'
+      <p class='vcs git'
+        data-period='2011/03-' itemprop='itemListElement'
+        ><kbd>git</kbd></p>
+      <p class='vcs perforce'
+        data-period='2010/07-2012/02' itemprop='itemListElement'
         >Perforce</p>
-      <p class='vcs svn start-y2008 end-y2010' itemprop='itemListElement'>SVN</p>
+      <p class='vcs svn'
+        data-period='2008/01-2010/12' itemprop='itemListElement'
+        >SVN</p>
     </li>
     <li>
       <h4 class='os'>OS</h4>
-      <p class='os linux start-earlier end-current'><span itemprop='itemListElement'
-        >Linux</span> (Arch/Debian/Slackware/Ubuntu)</p>
-      <p class='os windows start-earlier end-y2012 end-jun'><span itemprop='itemListElement'
+      <p class='os linux'
+        data-period='-'><span itemprop='itemListElement'
+        >Linux</span> (Arch/Debian/Slackware/Ubuntu/RHEL)</p>
+      <p class='os mac'
+        data-period='2010/07-' itemprop='itemListElement'
+        >Mac OS X</p>
+      <p class='os windows'
+        data-period='-2012/06'><span itemprop='itemListElement'
         >Windows</span> (2000/XP/7)</p>
-      <p class='os start-y2010 start-jul end-current' itemprop='itemListElement'>Mac OS X</p>
     </li>
     </ul>
-
-    <div class='tick'><p class='tick'>2007</p><p class='tick'>2008</p><p class='tick'
-        >2009</p><p class='tick'>2010</p><p class='tick'>2011</p><p class='tick'
-        >2012</p><p class='tick'>2013</p></div>
 
   </div><div style='clear: both;'></div>
 </div>
@@ -160,7 +194,11 @@ _gaq.push(['_trackPageview']);
     ><a href='https://twitter.com' itemprop='name'>Twitter</a></h4>
   <p class='period'>August 2013 &ndash; Current</p>
 
-  <p></p>
+  <p>Developed and maintained tools to administer the
+    <a href='https://blog.twitter.com/2014/manhattan-our-real-time-multi-tenant-distributed-database-for-twitter-scale'
+    >Manhattan Key-Value distributed database</a>, using Scala, Java and Python.
+    Services run on top of Mesos.</p>
+  <p>Developed ETL pipelines for reporting of infrastructure utilization.</p>
 
   <h3 id='travelbird'>Software Developer</h3>
   <h4 class='python django javascript linux git sql postgresql'
@@ -220,6 +258,8 @@ _gaq.push(['_trackPageview']);
     desktop and web based, using JavaScript, VB6, ASP and ASP.NET.</p>
 
 
+  <div class='no-print'>
+
   <h3 id='prominente'>Technical Support</h3>
   <h4 class='windows'
     itemscope itemtype='http://schema.org/Organization'
@@ -250,6 +290,8 @@ _gaq.push(['_trackPageview']);
 
   <p>Calibrated mechanical and electronic measurement instruments.
     Installed measurement instruments to be controlled by PLC.</p>
+
+  </div>
 </div>
 <div class='section'>
   <h2 id='education'>Education</h2>
@@ -277,22 +319,30 @@ _gaq.push(['_trackPageview']);
     Simple Regular Expression parser.</p>
   <!-- Further information available on request if you're reading this.-->
 
+  <h3 class='rust'><a href='https://github.com/estebank/galvanize'>galvanize</a></h3>
+  <p>Pure Rust library to interact with <a href='http://cr.yp.to/cdb.html'
+    >CDBs</a>.</p>
+
+  <h3 class='rust'><a href='https://github.com/estebank/sbahn'>sbahn</a></h3>
+  <p>Toy Distributed Hash Table implementation in Rust.</p>
+
   <h3><a href='http://stackoverflow.com/users/34813/voyager'
     title='voyager' rel='me'>Stack Overflow</a></h3>
-  <p>Written 350 answers. Active in javascript, python, html, css, jquery.</p>
+  <p></p>
 
-  <h3 class='javascript'><a href='https://github.com/estebank/delim'>delim</a></h3>
-  <p>Javascript <em>del</em>ayed <em>im</em>age loader.</p>
-
-  <h3 class='javascript'><a href='https://github.com/estebank/resim'>resim</a></h3>
-  <p>Javascript <em>res</em>ponsive <em>im</em>age loader.
-    Use media queries to change the image to be displayed on img tags.</p>
-
+  <div class='no-print'>
   <h3 class='python'><a
-    href='http://code.google.com/p/google-visualization-python/'
+    href='https://github.com/google/google-visualization-python'
     >Google visualization Python API</a></h3>
   <p>Python API that generates Google Visualization API URLs.
     Involvement: Simple bugfix in import.</p>
+
+  <h3 class='javascript'>delim</h3>
+  <p>Javascript <em>del</em>ayed <em>im</em>age loader.</p>
+
+  <h3 class='javascript'>resim</h3>
+  <p>Javascript <em>res</em>ponsive <em>im</em>age loader.
+    Use media queries to change the image to be displayed on img tags.</p>
 
   <h3 class='python'><a
     href='https://github.com/estebank/text-sherlock'
@@ -300,15 +350,17 @@ _gaq.push(['_trackPageview']);
   <p>Text search engine with indexer and a front end web interface to search.
     Code clean up and extention of functionality.</p>
 
-  <h3 class='javascript'><a href='https://github.com/estebank/jsmk'>jsmk</a></h3>
+  <h3 class='javascript'>jsmk</h3>
   <p>Javascript, Canvas based, fighting game engine. Co-author.
     Currently in early stages of development.</p>
 
-  <h3 class='javascript'><a href='https://github.com/estebank/panorama'>panorama</a></h3>
-  <p>HTML5+JS diff display that mimics <a href='http://meldmerge.org/'>meld's</a> interface.
-      Early stages of development.</p>
+  <h3 class='javascript'>panorama</h3>
+  <p>HTML5+JS diff display that mimics <a href='http://meldmerge.org/'>meld's</a>
+    interface. Early stages of development.</p>
 
   <h3><a href='https://plus.google.com/photos/105658180396282744760/albums'>Photography</a></h3>
+
+  </div>
 </div>
 </div>
 <div class='footer'>
@@ -346,7 +398,7 @@ h2 {
     // When printing replace my mug for a QR code card.
     if (document.getElementsByClassName) {  // Sane browser (IE>8)
         var name = 'Esteban Kuber';
-        var tel = '+5491133786367';
+        var tel = '';
         var url = 'esteban.kuber.com.ar/resume';
         var mail = '\x65\x73\x74\x65\x62\x61\x6e\x40kuber\x2e\x63\x6f\x6d\x2ear';
         var mecard = 'MECARD:N:{name};TEL:{tel};URL:{url};EMAIL:{mail};;'

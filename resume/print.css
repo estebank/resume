@@ -125,3 +125,6 @@ div.timeline h4:after {
 .footer {
   display: none;
 }
+.no-print {
+  display: none;
+}

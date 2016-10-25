@@ -124,7 +124,7 @@ h3 {
   font-size: 11pt;
   margin: 0;
 }
-.experience h3:nth-of-type(1) {
+.experience > h3:nth-of-type(1) {
   margin-top: -17px;
 }
 .experience h3 {
