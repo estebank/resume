@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 import webapp2
 from webapp2_extras import routes
 from resume.resume import EstebanResume
@@ -7,7 +7,7 @@ from javier.cv import JavierCv
 
 ### URL MAPPING
 
-protocol = 'http://'
+protocol = 'https://'
 subdomain_esteban = 'esteban.kuber.com.ar'
 subdomain_javier = 'javier.kuber.com.ar'
 
@@ -17,7 +17,7 @@ def redirect(path, target=protocol+subdomain_esteban+'/resume/'):
 
 
 app = webapp2.WSGIApplication(routes=[
-        redirect('/.*', 'http://esteban.kuber.com.ar'),
+        redirect('/.*', protocol+subdomain_esteban),
         routes.DomainRoute(subdomain_esteban, [
             webapp2.Route('/resume/', handler=EstebanResume, name='resume'),
             redirect('/resume'),

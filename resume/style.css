@@ -105,6 +105,7 @@ h2 {
   float: left;
   margin: 0 0 0 -150px;
   color: #9fc3df;
+  font-family: 'PT Sans Caption', Geneva, Tahoma, sans-serif;
   font-family: 'Pontano Sans', Geneva, Tahoma, sans-serif;
   font-size: 18pt;
   font-weight: normal;
@@ -120,6 +121,7 @@ h2 {
   transition: opacity 1s ease;
 }
 h3 {
+  font-family: 'PT Sans Caption', Geneva, Tahoma, sans-serif;
   font-family: 'Noticia Text', serif;
   font-size: 11pt;
   margin: 0;
@@ -135,6 +137,7 @@ h3#itc {
   margin-top: 25px;
 }
 h4 {
+  font-family: 'PT Sans Caption', Geneva, Tahoma, sans-serif;
   font-family: 'Noticia Text', serif;
   font-size: 9.5pt;
   margin: 0;
@@ -153,11 +156,10 @@ h4 a:hover {
   float: right;
   position: relative;
   color: #555;
-  text-shadow: #DDD 1px 1px 3px;
 }
 #interests p {
   margin-top: 0;
-  color: #666;
+  /*color: #666;*/
   font-size: 10pt;
 }
 ul.skills {
@@ -181,6 +183,8 @@ div.timeline p {
   padding-right: 10px;
   text-shadow: white 0 0 5px;
   font-size: 12px;
+  font-size: 10pt;
+  font-family: Helvetica, Arial, sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -504,6 +508,8 @@ h4.vcs {
       float: none;
       margin: 0;
     }
+
+    /* skills */
     div.tick {
       display: none;
     }
@@ -545,3 +551,42 @@ h4.vcs {
       display: none;
     }
 }
+
+    /* skills */
+    div.tick {
+      display: none;
+    }
+    ul li p {
+      display: inline;
+      margin: 0 !important;
+      border: 0 !important;
+      padding: 0 !important;
+      width: auto !important;
+      background-color: white !important;
+      background: none !important;
+    }
+    ul li p.go-up {
+      display: none;
+    }
+    ul li p:after {
+      content: ', ';
+    }
+    ul li p:last-child:after {
+      content: '.';
+    }
+    div.timeline h4 {
+      float: none;
+      display: inline;
+      width: auto;
+      margin: 0;
+      color: #333;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      transform: rotate(0);
+    }
+    div.timeline h4:after {
+      content: ': ';
+    }
+    .timeline li {
+      list-style-type: disc;
+    }
