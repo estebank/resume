@@ -7,7 +7,7 @@ from javier.cv import JavierCv
 
 ### URL MAPPING
 
-protocol = 'http://'
+protocol = 'https://'
 subdomain_esteban = 'esteban.kuber.com.ar'
 subdomain_javier = 'javier.kuber.com.ar'
 
@@ -17,7 +17,7 @@ def redirect(path, target=protocol+subdomain_esteban+'/resume/'):
 
 
 app = webapp2.WSGIApplication(routes=[
-        redirect('/.*', 'http://esteban.kuber.com.ar'),
+        redirect('/.*', 'https://esteban.kuber.com.ar'),
         routes.DomainRoute(subdomain_esteban, [
             webapp2.Route('/resume/', handler=EstebanResume, name='resume'),
             redirect('/resume'),

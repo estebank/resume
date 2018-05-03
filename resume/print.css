@@ -1,14 +1,14 @@
 * {
   opacity: 1 !important;
 }
-body{
+body {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 h1 {
-  color: #555;
+/*  color: #555; */
 }
 h2 {
-  color: #AAA;
+/*  color: #AAA; */
   font-size: 14pt;
   margin-left: -120px;
   width: 120px;
@@ -38,27 +38,28 @@ img.photo {
 a {
   text-decoration: none;
   color: #222;
+  color: #333;
 }
 p {
   font-size: 10.5pt;
 }
 .section {
-  border-top-color: #AAA;
+  /*border-top-color: #AAA;*/
   padding-left: 120px;
 }
 .section p, .section li {
   font-size: 10pt;
 }
 .experience h3 {
-  border-top-color: #AAA;
+  /*border-top-color: #AAA;*/
 }
 #interests a:link:after, .section a:visited:after {
   content: " \2014 " attr(href);
   font-size: 9pt;
   color: #666;
 }
-#interests p a:link:after, .section p a:visited:after {
-  content: " (" attr(href) ") ";
+#interests p a:link:after, .section p a:link:after {
+  content: " (" attr(href) ")";
   font-size: 9pt;
   color: #666;
 }
@@ -108,7 +109,7 @@ div.timeline h4 {
   display: inline;
   width: auto;
   margin: 0;
-  color: #333;
+  /*color: #333;*/
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
   transform: rotate(0);
