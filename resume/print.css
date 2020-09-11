@@ -37,7 +37,6 @@ img.photo {
 }
 a {
   text-decoration: none;
-  color: #222;
   color: #333;
 }
 p {
@@ -58,7 +57,7 @@ p {
   font-size: 9pt;
   color: #666;
 }
-#interests p a:link:after, .section p a:link:after {
+#intro p a:link:after, #interests p a:link:after, .section p a:link:after {
   content: " (" attr(href) ")";
   font-size: 9pt;
   color: #666;

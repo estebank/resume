@@ -2,10 +2,10 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8'>
-<title>Esteban Kuber's Resume</title>
+<title>Esteban Küber's Resume</title>
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400&text=EstebanK%C3%BCbr%20'
     rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Pontano+Sans:400&text=SklEenatsbrxpicduoPj%26%0AI%20'
+<link href='https://fonts.googleapis.com/css?family=Pontano+Sans:400&text=CSklEefnatsbrxpicduoPj%26%0AI%20'
     rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Noticia+Text:700'
     rel='stylesheet' type='text/css'>
@@ -24,7 +24,7 @@
   content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
 <meta name='author' content='Esteban Kuber' />
 <meta name='keywords' content='esteban,kuber,resume,cv,curriculum,vitae' />
-<meta name='description' content='Python software developer.' />
+<meta name='description' content='Esteban Kuber — Rust Software Engineer' />
 <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 <link rel='apple-touch-icon' sizes='114×114' href='/touch-icon-114x114.png' />
 <link rel='apple-touch-icon' sizes='72×72' href='/touch-icon-72x72.png' />
@@ -55,9 +55,25 @@ _gaq.push(['_trackPageview']);
   <!--p itemprop='telephone'> None at the moment </p-->
   <p class='profile'><a href='https://github.com/estebank' rel='me'>github profile</a></p>
 </address>
+<blockquote>We spent decades trying to invent a sufficiently smart compiler
+  when<br>we should have been inventing a sufficiently empathetic one.</blockquote>
 
 <div id='intro'>
-  <p itemprop='description'>Software Engineer</p>
+  <p itemprop='description'>I am a Software Engineer working 10+ years on
+    developer tools, distributed systems and consumer facing applications.
+    I have been involved in
+    <a href='https://github.com/rust-lang/rust/pulls?q=is:pr+author:estebank'
+      >the Rust programming language</a>
+    since 2015 and have spent countless hours
+    <a href='https://youtu.be/Z6X7Ada0ugE'>making the Rust Compiler a
+    friendly tutor</a>. I am passionate about Open Source/Libre Software,
+    strongly enjoy mentoring, problem solving and knowledge sharing, and am I
+    convinced that the User Experience of developer tools is as important
+    as that of consumer products.
+    </p>
+    <p>I am seeking opportunities and projects that will allow me to
+      use Rust as a solution to real problems, and to
+      continue growing and improving the Rust ecosystem and community.</p>
 </div>
 
 <div class='section'>
@@ -130,9 +146,18 @@ _gaq.push(['_trackPageview']);
     </li>
     <li>
       <h4 class='database'>Storage</h4>
+      <p class='database sql'
+        data-period='2008/01-2010/06 2013/03-2014/06' itemprop='itemListElement'
+        >PostgreSQL</p>
+      <p class='database sql nosql'
+        data-period='2018/07-' itemprop='itemListElement'
+        >CockroachDB</p>
       <p class='database nosql'
         data-period='2013/08-' itemprop='itemListElement'
         >Manhattan</p>
+      <p class='database sql'
+        data-period='2010/07-' itemprop='itemListElement'
+        >MySQL</p>
       <p class='database nosql'
         data-period='2010/07-2013/02' itemprop='itemListElement'
         >BigTable</p>
@@ -142,12 +167,6 @@ _gaq.push(['_trackPageview']);
       <p class='database sql gae'
         data-period='2011/07-2012/12' itemprop='itemListElement'
         >Google Cloud SQL</p>
-      <p class='database sql'
-        data-period='2010/07-' itemprop='itemListElement'
-        >MySQL</p>
-      <p class='database sql'
-        data-period='2008/01-2010/06 2013/03-2014/06' itemprop='itemListElement'
-        >PostgreSQL</p>
       <p class='database sql'
         data-period='2007/07-2009/12' itemprop='itemListElement'
         >MS SQL Server</p>
@@ -190,7 +209,7 @@ _gaq.push(['_trackPageview']);
     ><a href='https://www.commure.com' itemprop='name'>Commure</a></h4>
   <p class='period'>July 2018 &ndash; Current</p>
   <p><a href="https://medium.com/job-portraits/software-engineer-esteban-k%C3%BCber-on-the-challenges-and-opportunities-of-rust-and-commure-a4aa578e2b6"
-    >Developing solutions using Rust.</a></p>
+    >Developing solutions for the Health Care industry using Rust</a>.</p>
 
   <h3 id='rustc'>Compiler Team Member</h3>
   <h4 class='rust git'
@@ -199,8 +218,9 @@ _gaq.push(['_trackPageview']);
   <p class='period'>September 2017 &ndash; Current</p>
   <p><a href='https://www.rust-lang.org/en-US/team.html#Compiler-team'
     >Member of the Rust Compiler Team</a>, dedicated mainly to <a
-    href='https://github.com/rust-lang/rust/pulls?q=is%3Apr+author%3Aestebank'
-    >improving language and diagnostic ergonomics</a>.</p>
+    href='https://github.com/rust-lang/rust/pulls?q=is:pr+author:estebank'
+    >improving its language ergonomics and associated tooling user
+    experience</a>.</p>
 
   <h3 id='twitter'>Software Engineer</h3>
   <h4 class='python java scala git nosql'
@@ -316,7 +336,15 @@ _gaq.push(['_trackPageview']);
 </div>
 
 <div class='section' id='interests'>
-  <h2>Projects &amp; Interests</h2>
+  <h2>Projects &amp; Conferences</h2>
+
+  <h3>RustConf 2020 — <a href='https://youtu.be/Z6X7Ada0ugE'
+    >Bending the Curve: A Personal Tutor at Your Fingertips</a></h3>
+  <p>Talk delivered at the first Virtual RustConf.</p>
+
+  <h3>RustLATAM 2019 — <a href='https://youtu.be/XCeB-CgsH4w'
+    >Friendly Ferris: Developing Kind Compiler Errors</a></h3>
+  <p>Talk given in Spanish in Montevideo, Uruguay.</p>
 
   <h3>Project Stout (Eclaireur)</h3>
   <p>git and semantic source code navigation tool.
@@ -331,7 +359,7 @@ _gaq.push(['_trackPageview']);
   <h3 class='rust'><a href='https://github.com/phildawes/racer'
       >Racer - code completion for Rust</a></h3>
   <p><a
-    href='https://github.com/phildawes/racer/pulls?q=is%3Apr+author%3Aestebank'
+    href='https://github.com/phildawes/racer/pulls?q=is:pr+author:estebank'
     >Contributor</a>.</p>
 
   <h3><a href='https://stackoverflow.com/users/34813'
@@ -346,7 +374,7 @@ _gaq.push(['_trackPageview']);
     href='https://github.com/google/google-visualization-python'
     >Google visualization Python API</a></h3>
   <p>Python API that generates Google Visualization API URLs.
-    Involvement: Simple bugfix in import.</p>
+    Involvement: bugfixes.</p>
 
   <h3 class='javascript'>delim</h3>
   <p>Javascript <em>del</em>ayed <em>im</em>age loader.</p>
@@ -371,28 +399,18 @@ _gaq.push(['_trackPageview']);
   <p class='period'>2006 &ndash; 2012</p>
   <p>Left unfinished after moving from Argentina to Europe.</p>
 
+  <div class='no-print'>
   <h3 id='itc'>Electronics Technician</h3>
   <h4><a itemprop='alumniOf'
       >Instituto Tecnol&oacute;gico del Comahue</a></h4>
   <p class='period'>2000 &ndash; 2005</p>
   <p>Graduate with honors.</p>
+  </div>
 </div>
 </div>
 
 <div class='footer'>
-  <p><a href='https://plus.google.com/105658180396282744760' rel='me'
-    >Google+ profile</a></p>
   <p><a href='https://github.com/estebank' rel='me'>github profile</a></p>
-  <p><a href='https://code.google.com/u/105658180396282744760/' rel='me'
-    >Google code profile</a></p>
-  <p><a href='https://slashdot.org/~vgerclover' rel='me'
-    ><code>/.</code> profile</a></p>
-  <p><a href='https://meta.stackoverflow.com/users/130127/perbert' rel='me'
-    >Meta StackOverflow profile</a></p>
-  <p><a href='https://careers.stackoverflow.com/estebank' rel='me'
-    >Careers StackOverflow</a></p>
-  <p style='display:none;'><a href='https://steamcommunity.com/id/estebank'
-    rel='me'>Steam profile</a></p>
   <p class='source'><a
     href='https://github.com/estebank/resume/blob/master/resume.html'
     >View Source</a></p>
